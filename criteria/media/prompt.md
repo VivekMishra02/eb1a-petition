@@ -37,3 +37,28 @@ Part 4: If you feel that certain evidence fits in other criteria of Eb1A, then a
 
 
 you need to carefully plan and execute the tasks I asked you to do from part 1 to Part 4 and give me in the file /Users/rahulvishwakarma/Documents/GitHub/EB1A/criteria/media/analysis.md
+
+
+
+
+Read the file /Users/vivekmishra/Downloads/eb1_template/criteria/media/analysis.md and based on that you need to write me Eb1A Criterion 3: Published material about the person in professional or major trade publications or other major media relating to the person's work in the field for which classification is sought. Such evidence must include the title, date, and author of the material, and any necessary translation.
+
+
+you need to write in file /Users/vivekmishra/Downloads/eb1_template/criteria/media/media.tex and also update main.tex with proper bibitem and exhibits. 
+
+Understand the sequence of EB1A Criteria 6: Published Material About the Alien
+\subsection{Evidence of published material about the alien in professional or major trade publications or other major media}
+\label{sec:media}
+\input{criteria/media/media.tex} in the main.tex, so accordingly, you need to have the bibitem and exhibits in the file main.tex 
+
+for completing this task, you need to search on internet and also refer https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2 to find the best practices to write this criteria. have all the required inforamtion and supporing things from the internet. 
+
+exhibits are in the folder : /Users/rahulvishwakarma/Documents/GitHub/EB1A/criteria/media/evidence
+
+your writing style should as you have alredy writtne the orginal contribution, judging, memebrship. the goal is to maintian consitenency in writing style. do not use unncessary bullet points, make sure to highlight things by underline and bold. 
+
+always remember that you are writing from a perspective of expert 20 years Eb1A USCIS Examiner and you will not make any mistakes. 
+
+make sure all citations, bibitem, and exhibits are propely taken care of and properly mapped. 
+
+Carfully plan and compelte this task. you need not worry about the token limit and compele the task as per the best practice fo the criteria.
