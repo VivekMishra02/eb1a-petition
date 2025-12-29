@@ -1,0 +1,241 @@
+Delivered-To: vivekmishraima@gmail.com
+Received: by 2002:a05:7108:3d06:b0:500:58d:38 with SMTP id hf6csp2375169gdb;
+        Sat, 8 Nov 2025 22:29:06 -0800 (PST)
+X-Google-Smtp-Source: AGHT+IGSQfYr0TcSM2NO0TN+O71T7ZXOgG07OX94XNRZih4ou4liQPGWY004X7FdfhBQG6KDh/KS
+X-Received: by 2002:a05:690e:2589:b0:63f:bf2b:5754 with SMTP id 956f58d0204a3-640d454b4e0mr2899012d50.28.1762669746638;
+        Sat, 08 Nov 2025 22:29:06 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1762669746; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=DNfZw+pn12zPAvCK4Hdonx0WkShJ0f9VLaP91iQ+Iafs7VUp4fVJrFVzo8w5loWI+5
+         WdUoj24doG0+XwSj6ctKMuGirP1XKo0+yO6danwSts5yscs+zQseXTd2qv+O8DT6sDBu
+         AopqzjoTMSKvMlDzeQeFQWvT7K+HVCFj7fld2T+xYhchgFCca565aYW5/qC2QBMWz9Ww
+         rYCBUjg6ilLpmfQ/tH4phjn8w3sDlGB8ISZ/2Tu2ysoJlwQ4LIjfLmZuOagFqWEbnPQ2
+         PgeA9eNjlAZSLS5nn9x/4PuJ68kNZ2ULeAsZlRKY0sGOllEpZsfxPxawvVzIGpMX5R7M
+         92uA==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=request-id:client-request-id:mime-version:date:subject:to:from
+         :dkim-signature:message-id;
+        bh=VcorrqO/z25UnzBCTw04jZRiTYn3YwVmqoqeXgb9MOw=;
+        fh=XfdhkEDA5/RFiTlsrmjdktPW4oBrZqngnlOTcOBSRVY=;
+        b=Qk0yLx/R9wrNpi+bn5ayJrYEqjgoY3qCfRLWRTXwSUqI9Eizl2xwf0YH0e8sxfroWx
+         Ex5JZm6cgSpErQpHA9/5p6rMDBlRIh5IhnoHOPFeVrMRRWdTm+OgcwGvq4ondGUFPzQQ
+         0F9Tap/UMNzzQrNxg1dZyLORKvvhF59vRLsqwWIa8b2WQsUZBT6VmV0RPdwa7AgHc/QW
+         Xx2LDi5ceBWKQeohdJMlvraIeCESvDgcVPc6UUd7lzAFNvPPQG4Hgzsu8huUKnXPWn6D
+         r9cX8+o0nWi0nCBqBM6/ApjtjR98TqaR4G1SxFBuTZPFstVuyyAi81lz5E3PfAkSndKL
+         t98A==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@msr-cmt.org header.s=s1024 header.b=Cio9inqr;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of noreply@msr-cmt.org designates 2a01:111:f403:c112::5 as permitted sender) smtp.mailfrom=noreply@msr-cmt.org;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=msr-cmt.org
+Return-Path: <noreply@msr-cmt.org>
+Received: from CY7PR03CU001.outbound.protection.outlook.com (mail-westcentralusazlp170100005.outbound.protection.outlook.com. [2a01:111:f403:c112::5])
+        by mx.google.com with ESMTPS id 00721157ae682-787d6a5a83bsi19754347b3.229.2025.11.08.22.29.06
+        for <vivekmishraima@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Sat, 08 Nov 2025 22:29:06 -0800 (PST)
+Received-SPF: pass (google.com: domain of noreply@msr-cmt.org designates 2a01:111:f403:c112::5 as permitted sender) client-ip=2a01:111:f403:c112::5;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@msr-cmt.org header.s=s1024 header.b=Cio9inqr;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of noreply@msr-cmt.org designates 2a01:111:f403:c112::5 as permitted sender) smtp.mailfrom=noreply@msr-cmt.org;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=msr-cmt.org
+Message-ID: <691034b2.050a0220.406b4.cc0aSMTPIN_ADDED_BROKEN@mx.google.com>
+X-Google-Original-Message-ID: <[17314efc9cf64a039bb90976d9240973-JFZGS42DN5WW25LONFRWC5DJN5XFA3DBORTG64TNFVIHE33EFVBEYMSQPRWXG4TDNV2HYRLNMFUWYVDFON2HYRLYN5JW25DQ@microsoft.com]>
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=kiTa6Hk6sbsTvCxW/k2pA+EjvntwG0L+BExPk0Fk9tumvbdo+rlVhic2Qa2F6uqR28ISi38rTTkAdbe4/ymqF3GfSyywLetJ9wxLgzqKeKQYS+XKMyXEpqnzXFhra90fNC4eFd7++af23sh0UA1xDgo0fcv458UX7cgE269tXLjbkOjJbdx2tnbpFECg9rkjQfVZRI8Phcd4FaeLME0VtNdRTB5Ef7qhF+o2UlHo/hcTkuycGwKaP2qag2Y2pFW0vyiKUQuLTfP0v44HwIPuKZK0A3FjZGOZZVlrHSJQxy3dbbEXTvXZskzY03BRWkNtKqCP1sGvjVjdBDnWuhN4wg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=VcorrqO/z25UnzBCTw04jZRiTYn3YwVmqoqeXgb9MOw=;
+ b=SD9DGJfQG8mE0U5u8S0hLg8YjUDT5Cjf26zKslDEZGNgQNzWXPV7wZZau8hehZybsa8v+QVor6kK60plEbBfkrE/KoucnldBedKDByHOoXlY3qtFXoRBGK5rR1cgBhT/s3AkguDLnvhHGCfwwF4MnXQhTwqJlGWqguqQ36mARsoQqyTGza5bkgz6tk3vCVFVWOKKm1r3Nw2XiRkmXaD+QZKuJbA1qU7o9Ci3GHlYm2MlfQb9EKG+qJyb02R9PL5ThSJPfZX+FbMk2pNGXmd36XUNmo64/ykVKQ9+s7VkRkkOY5Edvn6U4nCRqd0+tcMQ7h3yP9DCbuctvEaq0K+Kdw==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+Received: from substrate.office.com (2603:10b6:408:32d::6) by
+ LV0PR04MB9857.namprd04.prod.outlook.com with HTTP via
+ DM6PR04CA0014.NAMPRD04.PROD.OUTLOOK.COM; Sun, 9 Nov 2025 06:29:05 +0000
+DKIM-Signature: v=1; a=rsa-sha256; d=msr-cmt.org; s=s1024; c=relaxed/relaxed;
+	t=1762669745; h=from:to:cc:subject:date:messageid;
+	bh=VcorrqO/z25UnzBCTw04jZRiTYn3YwVmqoqeXgb9MOw=;
+	b=Cio9inqrwVdLZuRVQwb/27RflfEOidPXnNSz6iZT0RK84X6xNmW3fxV66RUzkLTB2tX4E9VILBY
+	2H1kmusKXHN08HSfAG6/UqaGZLTgCbU/Qx8OMekQ+kweINcveWspL23tJEFMw2k7KB6u6l3pbH1Rm
+	Nju1QA7oac3XxHARh3g=
+From: Microsoft CMT <noreply@msr-cmt.org>
+To: Vivek Mishra <vivekmishraima@gmail.com>
+Subject: ACDSA2026 : Paper 1105
+Date: Sun, 09 Nov 2025 06:29:05 +0000
+X-MS-Iris-MetaData: =?utf-8?q?{=22Type=22=3Anull=2C=22Fields=22=3A{=22InstanceID=22=3A=2217314efc-9cf6-4a03-9bb9-?=
+ =?utf-8?q?0976d9240973=22=2C=22ActivityID=22=3A=2213401ea1-dbf3-45f6-ac4d-7b1063160?=
+ =?utf-8?q?a25=22}}?=
+MIME-Version: 1.0
+X-TsbHttpDeliveryResponseType: Success
+Content-Type: multipart/alternative; boundary="=-SNK7t8+ewtMfjcvl6T1HRA=="
+X-MS-PublicTrafficType: Email
+client-request-id: 17314efc-9cf6-4a03-9bb9-0976d9240973
+request-id: 17314efc-9cf6-4a03-9bb9-0976d9240973
+Return-Path: noreply@msr-cmt.org
+X-MS-TrafficTypeDiagnostic: LV0PR04MB9857:EE_ICP
+X-MS-Exchange-SenderADCheck: 0
+X-MS-Exchange-AntiSpam-Relay: 0
+X-Microsoft-Antispam:
+	BCL:0;ARA:13230040|376014|69100299015|61400799027|19092799006|13003099007|4076899003|8096899003|15920700032;
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TkRKa0ZZZkJUaFFkdzlMSkVJOG0xdDhFYlBtT1lzalRFL0JMQkx5NlM3cXVU?=
+ =?utf-8?B?Z2lTQ2xGN25JUVE4eUhQbnByUkF1bzAxeFRrSW5IeHYxVTZmWXRHdmg2SlBs?=
+ =?utf-8?B?Q21xRU9CKzNYWjFKRWlHQU5hZjVoSDNMenVTMk5ha2dWank3RElUSVRFUXZr?=
+ =?utf-8?B?aFJUVEVkT29ISldBdmwrVFNMMGgweDFIYTEzY3RMNHFoWVpIS0QwTWtYVWl3?=
+ =?utf-8?B?WjQ2RXRqMy9KcjFKeSs3MGtkUWZhdFZEVWU4V0Q1YkFNVTk4NmlHUHY5WWRv?=
+ =?utf-8?B?MkNZUlJUZ1pNUFp0bDZzTVlXMDgyQ1doNDdqSlV4dHBySnpEcS9QZzlQVmN0?=
+ =?utf-8?B?N2ZKeUdvQWt6d2lXZkRzMWdERHpKN3hILzZuSUFaMmtBODdEZmh1OWV5YlF3?=
+ =?utf-8?B?SEFlUlpWWUZrOWRKU1JmZFBMdC9VN3ZtYzFBNmx0bk5OdFR5VGZsb1FEeHhK?=
+ =?utf-8?B?VHVjRzlFSWJoZkFId1pVeFhOYUNIaHJ6WGFLeFpUYSsvcTB3U3UxYmlaaFp1?=
+ =?utf-8?B?WDJjRjgzZDgzN1RweWV3cjNyZmZRTDhBb2U1ZG0yWUJHdHJGQTFRKzVLV0Zs?=
+ =?utf-8?B?bnQ1Qk9SQUhqSFNENEJiZzdiY2ZHc2J2UTRLem90d1k3VGxjbmlwS3luUVlT?=
+ =?utf-8?B?UDJFR1RtNDJrbXZaSXJLQS9PTW43OWEvNUFnWk5PZVN0Qm9zeHFDZXpUcUZr?=
+ =?utf-8?B?OUNONVFOUlIwdnhIN2hsZUxyZUZjM0FEemVRRVAycXRyR014R3psNU1GREp0?=
+ =?utf-8?B?aWZwT2FVd1RVTkFHMk0zV3ZQaC9YNlhnWExjOW9RcjdhWlNhSlhRZkU4YXBu?=
+ =?utf-8?B?WDUwQTUrdmQ3dWVjUFZCbU1ac3M1L1NTYTdDaEFPU1NlUkJHelp1Sms4eCsy?=
+ =?utf-8?B?T0k1dTEyVUVFUFF6QTByVHk0aEVibTArYkdSQTR1SHM3a0l1YU92U1picCs4?=
+ =?utf-8?B?VXBUYW0yakg1VlJ1K3U2bVpZNURiVGR5c1pmNGpVdGRZWG5PTjV1QXAzRXBG?=
+ =?utf-8?B?K3pZb3pvWjhmcit0SXJUdW5nUDNlaTlnUjhvNFI3VFJvOFZMQVpDQk1rQmJj?=
+ =?utf-8?B?WXBpUUoxRjRjV3hMR05zZjRtZUZSN0RlaW5IM1pqdktId2I1TGM0akw0Yyt1?=
+ =?utf-8?B?TnJtV3dKejRYZXVMTHpZNnN2Z1lGR0Z5RzJnNUdoVXg0bUxmQThrLzZMKzdm?=
+ =?utf-8?B?T0dLdSt2NVhoTzM1S0ZHVXdCdWFtL2F6Uk5IaGdzYmxkQWVtMStad0RIbmt1?=
+ =?utf-8?B?WUF3RjNjdGNDMG02cGI2NzAzQWJ6cFp6RFE5ekNWWCtsTXdJUldvYUlwTlZV?=
+ =?utf-8?B?SXBGcnZ6OTAxbDREL2w4YUlXd1hMazZlMUVkdjUySDI5MGJDa2lEdHpucVFn?=
+ =?utf-8?B?OEV2Qi8xcm5ISlYyS3JNYys0UER1Nm1kdktvSmlQUmMxNUM4dTNUVlJGREhP?=
+ =?utf-8?B?ZVEwUXppcEZNRHhTNzFTODg1UFgzQ3FHN1AzSWZwU0dKUkJKOUhVZFZYd2F3?=
+ =?utf-8?B?TU1PdzlNMUl2QzBBNWFzYW9ZYXN6ODdXNm5oaVNuNzVRU3dpSHI0emFMa2JM?=
+ =?utf-8?B?M0g3ZnNtK0RHU1V5Ymt4RXVvdS9Gb3dVR0REYlZwSlUvNm1zZXZ3aGx5OHBQ?=
+ =?utf-8?B?dWkwelVjVWV2Rkk5dk9leXBkY0xRd0ZDSnFUZkFEclNwaDl5SzlxU0V6TTRh?=
+ =?utf-8?B?dVJwS0drTnVYS3JkcDZObVJwVE9Ea0hSZ3Qxa0s2SkIzVTcvWUlVL1pJTGpw?=
+ =?utf-8?B?RkxtbjR6Z1Y2TXpsUkhOWVZUZTNuRXFSMzhqbHFpdlhZYVRVd0N6ZGJuZVpR?=
+ =?utf-8?B?OFVabC9pT29ha0Y2Mkx5U3NQUGtkN2x0UndLc1haY1pHekh6TUdxM0ZnNEV0?=
+ =?utf-8?B?YlFQU2RtRXNQUThadE1tdzNyTDJRZjU3SE5XK0dGN2xpdEFrbGhrK2FWSHlS?=
+ =?utf-8?Q?l+fV+cZmV6k7RScidAN0efUgpCgXqrPO?=
+X-Forefront-Antispam-Report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:;PTR:;CAT:NONE;SFS:(13230040)(376014)(69100299015)(61400799027)(19092799006)(13003099007)(4076899003)(8096899003)(15920700032);DIR:OUT;SFP:1020;
+X-MS-Exchange-AntiSpam-MessageData-ChunkCount: 1
+X-MS-Exchange-AntiSpam-MessageData-0:
+	jX99Ic3bJ+NRObv+4etRoS3PZAxH4S9/E/Ubm+I5gqgm9LkI3Hr+gUmrwVTigp7l2MHt5q/ssVuhsv1CT5F9aoN+B7SXJdzHutnU/3dSVk8fWaccNHcn4HcrFydRhSuBogo6uXB2chnRWuMqOuAp8ciXqu4O1UUIOMMJCs5NwsTSWL8RhPmv/JxjML7FlSY3GA2XQAHh2GCB05fsYMRYuoq3DD6a6F+ZIE2HrpMgqmD6B/Lh90zqsS2fNAJld9KnfbYwcZOY5fOeWgygoONFSH8xYKrgdbOZF5KlruTcYy1vlYS6S/mA4NsQ3l7VZ10nZmqF0L1XR5YBsYglZKCQnLZUlyE2cDpGeE8Bz6czUXza2ZwVXJGwXt+D8HhwZqDEuIVGeRKjDZZs2F4NvQEDww==
+X-OriginatorOrg: ideasprod05.microsoft.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: HttpSubmission-LV0PR04MB9857
+X-MS-Exchange-CrossTenant-Id: 2a40b993-cd69-49c9-bdd0-854ece490828
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 09 Nov 2025 06:29:05.1225 (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id:
+	af990aef-c3ff-4f6b-4a1c-08de1f5947f0
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: LV0PR04MB9857
+
+--=-SNK7t8+ewtMfjcvl6T1HRA==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Vivek Mishra has uploaded review for A Multi-Scenario Machine Learning Fram=
+ework for Predicting 5G Network Quality of Service
+
+-- Review Summary --
+
+
+1. Overall Evaluation:
+Please provide a detailed review including a justification for your scores.=
+ Both the score and the review are required.
+    Accept
+2. Comments for the author:=20
+    The paper is well-structured and readable, with clear sections and usef=
+ul figures/tables. Strengths include the multi-scenario approach and intera=
+ction-based features, which meaningfully enhance the models. However, to st=
+rengthen the work: (1) Investigate the perfect R=C2=B2 for resource allocat=
+ion provide feature importance (e.g., SHAP values) or correlation matrices =
+to rule out data artifacts. (2) Expand experiments with hyperparameter tuni=
+ng, larger/synthetic datasets, or comparisons to neural networks for non-li=
+near tasks. (3) Discuss limitations more critically, e.g., the small sample=
+ size and potential overfitting despite CV. (4) Add quantitative comparison=
+s to SOTA on similar datasets. Minor issues: Fix inconsistencies in R=C2=B2=
+ reporting (abstract vs. results), update the copyright year, and ensure co=
+nsistent formatting (e.g., umlauts in author names). These changes could el=
+evate it to an accept.
+3. Confidential remarks for the organizing committee: (This field is option=
+al)=20
+    The Kaggle dataset citation includes an access date of November 6, 2025=
+, while the current date is November 9, 2025 this might indicate a minor ty=
+po or forward-dating, but no major concerns. The work seems original based =
+on the content, though a plagiarism check is recommended given the public d=
+ataset. Suitable for oral/poster if space allows, but not a highlight paper=
+.
+
+
+Please do not reply to this email as it was generated from an email account=
+ that is not monitored.
+
+
+To stop receiving conference emails, you can check the 'Do not send me conf=
+erence email' box from your User Profile.
+
+Microsoft respects your privacy. To learn more, please read our <a href=3D'=
+https://go.microsoft.com/fwlink/?LinkId=3D521839'>Privacy Statement</a>.
+
+Microsoft Corporation
+One Microsoft Way
+Redmond, WA 98052=
+
+--=-SNK7t8+ewtMfjcvl6T1HRA==
+Content-Type: text/html; charset=utf-8
+Content-Id: <a98d8358-879e-4f26-8093-c0d609bae45d>
+Content-Transfer-Encoding: base64
+
+PCFET0NUWVBFIGh0bWw+PGh0bWw+PGhlYWQ+PG1ldGEgY2hhcnNldD0idXRmLTgiPjwvaGVhZD48
+Ym9keT48cHJlIHN0eWxlPSJmb250LWZhbWlseTogbW9ub3NwYWNlOyB3aGl0ZS1zcGFjZTogcHJl
+LXdyYXA7Ij5WaXZlayBNaXNocmEgaGFzIHVwbG9hZGVkIHJldmlldyBmb3IgQSBNdWx0aS1TY2Vu
+YXJpbyBNYWNoaW5lIExlYXJuaW5nIEZyYW1ld29yayBmb3IgUHJlZGljdGluZyA1RyBOZXR3b3Jr
+IFF1YWxpdHkgb2YgU2VydmljZQoKLS0gUmV2aWV3IFN1bW1hcnkgLS0KCgoxLiBPdmVyYWxsIEV2
+YWx1YXRpb246ClBsZWFzZSBwcm92aWRlIGEgZGV0YWlsZWQgcmV2aWV3IGluY2x1ZGluZyBhIGp1
+c3RpZmljYXRpb24gZm9yIHlvdXIgc2NvcmVzLiBCb3RoIHRoZSBzY29yZSBhbmQgdGhlIHJldmll
+dyBhcmUgcmVxdWlyZWQuCiAgICBBY2NlcHQKMi4gQ29tbWVudHMgZm9yIHRoZSBhdXRob3I6IAog
+ICAgVGhlIHBhcGVyIGlzIHdlbGwtc3RydWN0dXJlZCBhbmQgcmVhZGFibGUsIHdpdGggY2xlYXIg
+c2VjdGlvbnMgYW5kIHVzZWZ1bCBmaWd1cmVzL3RhYmxlcy4gU3RyZW5ndGhzIGluY2x1ZGUgdGhl
+IG11bHRpLXNjZW5hcmlvIGFwcHJvYWNoIGFuZCBpbnRlcmFjdGlvbi1iYXNlZCBmZWF0dXJlcywg
+d2hpY2ggbWVhbmluZ2Z1bGx5IGVuaGFuY2UgdGhlIG1vZGVscy4gSG93ZXZlciwgdG8gc3RyZW5n
+dGhlbiB0aGUgd29yazogKDEpIEludmVzdGlnYXRlIHRoZSBwZXJmZWN0IFImIzE3ODsgZm9yIHJl
+c291cmNlIGFsbG9jYXRpb24gcHJvdmlkZSBmZWF0dXJlIGltcG9ydGFuY2UgKGUuZy4sIFNIQVAg
+dmFsdWVzKSBvciBjb3JyZWxhdGlvbiBtYXRyaWNlcyB0byBydWxlIG91dCBkYXRhIGFydGlmYWN0
+cy4gKDIpIEV4cGFuZCBleHBlcmltZW50cyB3aXRoIGh5cGVycGFyYW1ldGVyIHR1bmluZywgbGFy
+Z2VyL3N5bnRoZXRpYyBkYXRhc2V0cywgb3IgY29tcGFyaXNvbnMgdG8gbmV1cmFsIG5ldHdvcmtz
+IGZvciBub24tbGluZWFyIHRhc2tzLiAoMykgRGlzY3VzcyBsaW1pdGF0aW9ucyBtb3JlIGNyaXRp
+Y2FsbHksIGUuZy4sIHRoZSBzbWFsbCBzYW1wbGUgc2l6ZSBhbmQgcG90ZW50aWFsIG92ZXJmaXR0
+aW5nIGRlc3BpdGUgQ1YuICg0KSBBZGQgcXVhbnRpdGF0aXZlIGNvbXBhcmlzb25zIHRvIFNPVEEg
+b24gc2ltaWxhciBkYXRhc2V0cy4gTWlub3IgaXNzdWVzOiBGaXggaW5jb25zaXN0ZW5jaWVzIGlu
+IFImIzE3ODsgcmVwb3J0aW5nIChhYnN0cmFjdCB2cy4gcmVzdWx0cyksIHVwZGF0ZSB0aGUgY29w
+eXJpZ2h0IHllYXIsIGFuZCBlbnN1cmUgY29uc2lzdGVudCBmb3JtYXR0aW5nIChlLmcuLCB1bWxh
+dXRzIGluIGF1dGhvciBuYW1lcykuIFRoZXNlIGNoYW5nZXMgY291bGQgZWxldmF0ZSBpdCB0byBh
+biBhY2NlcHQuCjMuIENvbmZpZGVudGlhbCByZW1hcmtzIGZvciB0aGUgb3JnYW5pemluZyBjb21t
+aXR0ZWU6IChUaGlzIGZpZWxkIGlzIG9wdGlvbmFsKSAKICAgIFRoZSBLYWdnbGUgZGF0YXNldCBj
+aXRhdGlvbiBpbmNsdWRlcyBhbiBhY2Nlc3MgZGF0ZSBvZiBOb3ZlbWJlciA2LCAyMDI1LCB3aGls
+ZSB0aGUgY3VycmVudCBkYXRlIGlzIE5vdmVtYmVyIDksIDIwMjUgdGhpcyBtaWdodCBpbmRpY2F0
+ZSBhIG1pbm9yIHR5cG8gb3IgZm9yd2FyZC1kYXRpbmcsIGJ1dCBubyBtYWpvciBjb25jZXJucy4g
+VGhlIHdvcmsgc2VlbXMgb3JpZ2luYWwgYmFzZWQgb24gdGhlIGNvbnRlbnQsIHRob3VnaCBhIHBs
+YWdpYXJpc20gY2hlY2sgaXMgcmVjb21tZW5kZWQgZ2l2ZW4gdGhlIHB1YmxpYyBkYXRhc2V0LiBT
+dWl0YWJsZSBmb3Igb3JhbC9wb3N0ZXIgaWYgc3BhY2UgYWxsb3dzLCBidXQgbm90IGEgaGlnaGxp
+Z2h0IHBhcGVyLjxiciAvPjxiciAvPjxiciAvPlBsZWFzZSBkbyBub3QgcmVwbHkgdG8gdGhpcyBl
+bWFpbCBhcyBpdCB3YXMgZ2VuZXJhdGVkIGZyb20gYW4gZW1haWwgYWNjb3VudCB0aGF0IGlzIG5v
+dCBtb25pdG9yZWQuPGJyIC8+PGJyIC8+PGJyIC8+VG8gc3RvcCByZWNlaXZpbmcgY29uZmVyZW5j
+ZSBlbWFpbHMsIHlvdSBjYW4gY2hlY2sgdGhlICdEbyBub3Qgc2VuZCBtZSBjb25mZXJlbmNlIGVt
+YWlsJyBib3ggZnJvbSB5b3VyIFVzZXIgUHJvZmlsZS48YnIgLz48YnIgLz5NaWNyb3NvZnQgcmVz
+cGVjdHMgeW91ciBwcml2YWN5LiBUbyBsZWFybiBtb3JlLCBwbGVhc2UgcmVhZCBvdXIgPGEgaHJl
+Zj0naHR0cHM6Ly9nby5taWNyb3NvZnQuY29tL2Z3bGluay8/TGlua0lkPTUyMTgzOSc+UHJpdmFj
+eSBTdGF0ZW1lbnQ8L2E+LjxiciAvPjxiciAvPk1pY3Jvc29mdCBDb3Jwb3JhdGlvbjxiciAvPk9u
+ZSBNaWNyb3NvZnQgV2F5PGJyIC8+UmVkbW9uZCwgV0EgOTgwNTI8L3ByZT48aW1nIHNyYz0naHR0
+cHM6Ly9tdWNwLmFwaS5hY2NvdW50Lm1pY3Jvc29mdC5jb20vbS92Mi92P2Q9QUlBQURVWk1YTDJD
+MkY3S1pPRFFFNjQ0TFJIQ01MWDRBUjJKUEgyRVU2SFNTN0VURlJGV1A2VUhOWU9aVEVYREVZRUtK
+R0tGQVA1WlhKM0tZWkRQVDNLNzVPV0M1MkhTQUlCRktQUk1TVVdESVNXRldOQ0M1NTJBU1BDT01F
+U0FJVDVQRFRVQlVJNUhURVFVTTZaTDI3WUc3SlpEUEFZJmk9QUlBQURHSUIzNVhCSUJVR1NZWEVQ
+NEJEUEdYSExNRlBUTkoyQU4zMlJZQU5TMlFPWkJMTE5GM0hLUFdQUUxMM0E2QlJEQ0JUQjdHWVFT
+NVBHQ1FYWUhITFJYNVhKQkNHQkRMQVJZSUpITlJSSUpSTFhHS1VEQzVRWUJWQVNSRFk0RjI0RUVO
+UTdDVEM1WDNCWTJVSVNPNlJBTlBVS1ZCN0tGNk9PTzJHRFo0RTRWMjdJRzdHU1BBM0I3VlFUU0dF
+RFlET1hBVkRUM0JSUzNNTkZMWkc2QUdNQTZPVE1aVTZCRUdVNDZPTFZGTUtORE9FSVBVUkVLRk9P
+SUk1NVVESFJVUUNUTzNaVUNaQUJKUllOVjNXNVIzTklaUE43T0knIHdpZHRoPScxJyBoZWlnaHQ9
+JzEnIHRhYmluZGV4PSctMScgYXJpYS1oaWRkZW49J3RydWUnIGFsdD0nJyAvPjwvYm9keT48L2h0
+bWw+PCEtLSBjVjogSGVJVHlGUGZWVXl2eVVkdi4zLjEuMS40IC0tPg==
+
+--=-SNK7t8+ewtMfjcvl6T1HRA==--

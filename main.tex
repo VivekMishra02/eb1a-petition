@@ -1,0 +1,495 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=2.1cm]{geometry}
+\setlength{\headheight}{14pt}
+\usepackage[utf8]{inputenc}
+% \usepackage{dirtytalk} % Replaced with custom definition below
+\newcommand{\say}[1]{``#1''}
+\usepackage{titling} % multiple title pages
+
+% \usepackage{bookmark}% http://ctan.org/pkg/bookmark
+
+\usepackage{pdfpages}
+\usepackage{soul}
+\pdfminorversion=7
+
+% \usepackage[hidelinks]{hyperref}
+% \hypersetup{
+%     colorlinks=blue,
+%     linkcolor=blue,
+%     filecolor=blue,      
+%     urlcolor=blue,
+% }
+
+
+\title{}
+% \author{Rahul Vishwakarma}
+\date{}
+
+\makeatletter
+\renewcommand\@bibitem[1]{\item\if@filesw \immediate\write\@auxout
+    {\string\bibcite{#1}{Exhibit \the\value{\@listctr}}}\fi\ignorespaces}% <------------
+\def\@biblabel#1{Exhibit #1:}% <-------------------
+\makeatother
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[labelfont=bf]{caption}
+% \usepackage[nolists]{endfloat}
+\usepackage{setspace}\setstretch{1.167} % prerequisite of geometry
+% \usepackage[textwidth=17.0cm, lines=42, hcentering]{geometry}
+% \usepackage[colorlinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[british, cleanlook]{isodate}
+\usepackage[pagewise, modulo, displaymath, mathlines]{lineno}
+\usepackage[expansion=false]{microtype}
+%\usepackage[medfamily, textlf, mathlf]{MyriadPro}\renewcommand{\familydefault}{\sfdefault}
+\usepackage[amssymb]{SIunits}
+% \usepackage[bib, enum, eqno, lineno, toc]{tabfigures}
+
+\usepackage{fancyhdr}
+\usepackage{soul}
+\usepackage{tikz}
+\setlength\parindent{0pt}
+\newcommand{\mybullet}{\,\textbullet\,}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+%\tikz[remember picture, overlay] \node at (current page.center) {\includegraphics{outline_letterhead}};
+\renewcommand{\headrulewidth}{1pt}
+% \cfoot{\vspace{-5em}\textbf{\so{\MakeUppercase{Razvan V. Marinescu}}}\\\smallskip\footnotesize Postdoctoral Associate in Artificial Intelligence for Healthcare\\ 
+
+\lhead{EB-1A Permanent Residence Petition for Vivek Kumar Mishra}
+% \rhead{\thepage}
+\cfoot{\thepage}
+
+
+
+
+\begin{document}
+\newcommand{\tc}[1]{\textcolor{blue}{#1}}
+
+% \input{cover/toc.tex}
+\input{cover/initial_evidence.tex}
+\input{cover/summary.tex}
+
+\section{Proof of \drs Extraordinary Ability}
+
+% EB1A Criteria 1: Original Contributions
+\subsection{Evidence of original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field}
+\label{sec:original}
+\input{criteria/original/original.tex}
+
+% EB1A Criteria 2: Scholarly Articles
+\subsection{Evidence of authorship of scholarly articles in professional or major trade publications or other major media}
+\label{sec:scholar}
+\input{criteria/scholar/scholar.tex}
+
+% EB1A Criteria 3: Judging the Work of Others
+\subsection{Evidence of participation as a judge of the work of others in the same or an allied field of specialization}
+\label{sec:judge}
+\input{criteria/judge/judge.tex}
+
+% % EB1A Criteria 4: Critical Role
+% \subsection{Evidence of performance in a leading or critical role for organizations or establishments with a distinguished reputation}
+% \label{sec:critical}
+% \input{criteria/critical/critical.tex}
+
+% EB1A Criteria 5: Membership
+\subsection{Evidence of membership in associations in the field which require outstanding achievements of their members}
+\label{sec:member}
+\input{criteria/member/member.tex}
+
+% EB1A Criteria 6: Published Material About the Alien
+% \subsection{Evidence of published material about the alien in professional or major trade publications or other major media}
+% \label{sec:media}
+% \input{criteria/media/media.tex}
+
+
+
+%% Bibliography for Judging Criteria
+\renewcommand\refname{List of Exhibits}
+
+\begin{thebibliography}{99}
+
+\subsection*{Evidence of Original Contributions of Major Significance}
+
+\bibitem{OR1}
+\textbf{Exhibit OR-1}: Design Patterns for AI Agents - Technical Book.
+\\Full text of ``Design Patterns for AI Agents: A Structured Approach to Building Robust and Intelligent Systems'' (ISBN: 979-8268912371).
+
+\bibitem{OR2}
+\textbf{Exhibit OR-2}: Appreciation Letter from Anand International College of Engineering.
+\\Official letter confirming adoption of \drs book into the permanent Central Library collection.
+
+\bibitem{OR3}
+\textbf{Exhibit OR-3}: Industry Peer Testimonial - Book Recognition.
+\\Testimonial from practicing software engineer recognizing the practical value of \drs technical framework.
+
+\bibitem{OR4}
+\textbf{Exhibit OR-4}: Faculty Development Programme (FDP) Speaker Schedule.
+\\Programme schedule showing \dr as ``Eminent Speaker'' representing JPMorgan Chase \& Co. at the 5-day AI/ML Faculty Development Programme.
+
+\bibitem{OR5}
+\textbf{Exhibit OR-5}: JPMorgan Chase - The Shops at Chase Press Release.
+\\Official press release announcing the launch of The Shops at Chase e-commerce platform.
+
+\bibitem{LOR6}
+\textbf{Exhibit LOR-6}: Letter of Recommendation from Dr. Maxim A. Dulebenets.
+\\Expert testimonial from Associate Professor at FAMU-FSU College of Engineering regarding the adoption of \drs research methodologies.
+
+\bibitem{OR6}
+\textbf{Exhibit OR-6}: Speaker Recognition Photo - Faculty Development Programme.
+\\Photograph of \dr presenting as ``Eminent Speaker'' at the 5-day AI/ML Faculty Development Programme at Anand International College of Engineering.
+
+\bibitem{OR7}
+\textbf{Exhibit OR-7}: JPMorgan Chase Production System Metrics (Splunk Dashboard).
+\\Screenshot from Splunk Enterprise dashboard showing \drs Chase Shopping Services platform metrics: 5,012,443 user requests and 22,623 orders processed monthly with 99.9\% success rate.
+
+\subsection*{Evidence of Judging and Reviewing Work}
+
+%% OpenReview Evidence: ICLR 2025 FM-Wild Workshop
+\bibitem{JR1}
+\textbf{Exhibit JR-1}: ICLR 2025 FM-Wild Workshop Reviewer Invitation.
+\\Email invitation to serve as reviewer for the FM-Wild (Foundation Models in the Wild) Workshop at ICLR 2025.
+
+\bibitem{JR2}
+\textbf{Exhibit JR-2}: ICLR 2025 FM-Wild Official Review Posted Confirmation.
+\\Evidence that \drs official review was posted for Paper 62 ``All It Takes Is One Prompt: An Autonomous LLM-MA System.''
+
+\bibitem{JR3}
+\textbf{Exhibit JR-3}: ICLR 2025 FM-Wild Review Received Confirmation.
+\\Confirmation from workshop organizers that \drs review was received for the assigned paper.
+
+%% OpenReview Evidence: NeurIPS 2025
+\bibitem{JR4}
+\textbf{Exhibit JR-4}: NeurIPS 2025 Position Paper Track Reviewer Invitation.
+\\Email invitation to serve as reviewer for NeurIPS 2025 Position Paper Track.
+
+\bibitem{JR5}
+\textbf{Exhibit JR-5}: NeurIPS 2025 Paper Assignment Screenshot.
+\\Screenshot showing papers assigned to \dr for review in NeurIPS 2025.
+
+%% MicrosoftCMT Evidence: GSP 2025
+\bibitem{JR6}
+\textbf{Exhibit JR-6}: Graph Signal Processing Workshop 2025 Reviewer Invitation.
+\\Email invitation to review for GSP 2025.
+
+\bibitem{JR7}
+\textbf{Exhibit JR-7}: GSP 2025 Paper 17 Assignment.
+\\Evidence of Paper 17 assignment for review at GSP 2025.
+
+%% MicrosoftCMT Evidence: ACDSA 2026
+\bibitem{JR8}
+\textbf{Exhibit JR-8}: ACDSA 2026 Reviewer Invitation.
+\\Email invitation to review for The 3rd International Conference on AI, Computer, Data Sciences and Applications.
+
+\bibitem{JR9}
+\textbf{Exhibit JR-9}: ACDSA 2026 Paper 1105 Review.
+\\Evidence of review for Paper 1105 at ACDSA 2026.
+
+%% MicrosoftCMT Evidence: Bengali Sentiment Analysis
+\bibitem{JR10}
+\textbf{Exhibit JR-10}: Bengali Sentiment Analysis Review Invitation.
+\\Invitation to review Bengali Sentiment Analysis research.
+
+%% IEEE Review Panel Evidence
+\bibitem{JR11}
+\textbf{Exhibit JR-11}: IEEE Senior Member Application Virtual Review Panel Invitation (June 2025).
+\\Invitation letter to serve on the IEEE Senior Member Application Review Panel.
+
+\bibitem{JR12}
+\textbf{Exhibit JR-12}: IEEE Senior Member Panel Completion (June 29, 2025).
+\\Documentation of \drs completion of IEEE Senior Member application review panel duties.
+
+\bibitem{JR13}
+\textbf{Exhibit JR-13}: IEEE Senior Member Panelist Thank You Letter.
+\\Official thank you letter from IEEE acknowledging \drs service on the Senior Member review panel.
+
+%% Hackathon Evidence: Journal Reviews
+\bibitem{JR14}
+\textbf{Exhibit JR-14}: Virtus InterPress - Risk Governance and Control Journal Review.
+\\Peer review invitation for Risk Governance and Control: Financial Markets \& Institutions journal.
+
+\bibitem{JR15}
+\textbf{Exhibit JR-15}: Virtus InterPress - Corporate \& Business Strategy Review.
+\\Peer review invitation for Corporate \& Business Strategy Review journal.
+
+\bibitem{JR16}
+\textbf{Exhibit JR-16}: Informatica Journal Article Review Request.
+\\Invitation to review research article for Informatica journal.
+
+%% Hackathon Evidence: Competition Judging
+\bibitem{JR17}
+\textbf{Exhibit JR-17}: PennApps Judge Certification Letter (University of Pennsylvania).
+\\Official judge certification for PennApps, the premier collegiate hackathon at the University of Pennsylvania.
+
+\bibitem{JR18}
+\textbf{Exhibit JR-18}: DragonHacks 2024 Judge Documentation.
+\\Evidence of \drs role as judge for DragonHacks 2024 hackathon.
+
+\bibitem{JR19}
+\textbf{Exhibit JR-19}: Claro Judge 2024 Certification Letter.
+\\Official certification of \drs role as judge for Claro 2024.
+
+\bibitem{JR20}
+\textbf{Exhibit JR-20}: Acknowledgement Letter.
+\\Acknowledgement letter documenting \drs judging contributions.
+
+\bibitem{JR21}
+\textbf{Exhibit JR-21}: Additional Judging Evidence Screenshot 1.
+\\Screenshot documenting additional judging activities.
+
+\bibitem{JR22}
+\textbf{Exhibit JR-22}: Additional Judging Evidence Screenshot 2.
+\\Screenshot documenting additional judging activities.
+
+\bibitem{JR23}
+\textbf{Exhibit JR-23}: Additional Judging Evidence Screenshot 3.
+\\Screenshot documenting additional judging activities.
+
+\subsection*{Evidence of Authorship of Scholarly Articles}
+
+\bibitem{SR1}
+\textbf{Exhibit SR-1}: Integrating Solar Photovoltaic Systems into the Grid: An Overview of AI Application.
+\\Peer-reviewed scholarly article on AI applications for renewable energy grid integration.
+
+\bibitem{SR2}
+\textbf{Exhibit SR-2}: The Role of Generative AI in Revolutionizing Healthcare, Education, and Finance: A Mini Review.
+\\Peer-reviewed scholarly article on generative AI applications across critical sectors.
+
+\bibitem{SR3}
+\textbf{Exhibit SR-3}: MDPI Sustainability Journal Publication (sustainability-16-08077).
+\\Peer-reviewed article published in MDPI Sustainability (Impact Factor: 3.9, Scopus Q2).
+
+\bibitem{SR4}
+\textbf{Exhibit SR-4}: Framework for Rail Transport Inequality Assessment: A Case Study of the Indian Railway Zones with Superfast Express (SE) Trains.
+\\Most cited publication with 15 citations. Also includes Connectivity Evaluations of Indian Railways Zones with Superfast Express (SE) Trains.
+
+\bibitem{SR5}
+\textbf{Exhibit SR-5}: Evaluating Financing Mechanisms and Economic Benefits to Fund Grade Separation Projects.
+\\Peer-reviewed publication with 12 citations on infrastructure financing and economic analysis.
+
+\bibitem{SR6}
+\textbf{Exhibit SR-6}: Evaluating Innovative Financing Mechanisms for the California High-Speed Rail Project.
+\\Peer-reviewed scholarly article with 7 citations on financing mechanisms for California High-Speed Rail.
+
+\bibitem{SR7}
+\textbf{Exhibit SR-7}: Funding the High-Speed Rail: A Case Study of the California Project.
+\\Peer-reviewed publication with 3 citations on funding mechanisms for California High-Speed Rail.
+
+\bibitem{SR8}
+\textbf{Exhibit SR-8}: Optimizing Multimodal Transportation Access to Support Commuting Among Low-Income Transit Riders with Social Distancing.
+\\Peer-reviewed article on transportation optimization and equity for low-income transit riders.
+
+\bibitem{SR9}
+\textbf{Exhibit SR-9}: Google Scholar Citation Profile and Publication Metrics.
+\\Screenshot documenting \drs 37 total citations, h-index of 3, and publication record.
+
+\subsection*{Evidence of Membership in Associations Requiring Outstanding Achievements}
+
+\bibitem{ieeehistory}
+\textbf{Exhibit M-1}: IEEE History and Organization Information.
+\\Evidence of IEEE's distinguished reputation as the world's largest technical professional organization, founded in 1884, with over 460,000 members in 190+ countries.
+
+\bibitem{ieeeseniormemberbylaw}
+\textbf{Exhibit M-2}: IEEE Bylaw I-104.3 - Senior Member Grade Requirements.
+\\Official IEEE bylaws specifying the requirements for Senior Member grade, including ten years of professional practice and five years of significant performance.
+
+\bibitem{ieeeseniorresults}
+\textbf{Exhibit M-3}: IEEE Senior Member Elevation Notification for \dr.
+\\Official email notification from IEEE Member Services confirming \drs elevation to Senior Member grade (Member Number: 100495418) in November 2024.
+
+\bibitem{ieeevouchers}
+\textbf{Exhibit M-4}: IEEE Senior Member Reference Letters and Vouchers.
+\\Documentation of the three IEEE Senior Member/Fellow references who evaluated and endorsed \drs application for Senior Member elevation.
+
+\bibitem{ieeemembercard}
+\textbf{Exhibit M-5}: IEEE Senior Member Certificate and Membership Card.
+\\Official IEEE Senior Member certificate and membership card confirming \drs Senior Member grade status.
+
+\bibitem{ieeeypmember}
+\textbf{Exhibit M-6}: IEEE Young Professionals and Technical Society Membership.
+\\Evidence of \drs active participation in IEEE Signal Processing Society and IEEE Young Professionals communities.
+
+\bibitem{ieeeseniornews}
+\textbf{Exhibit M-7}: News Article on IEEE Senior Member Elevation Significance.
+\\Third-party news coverage demonstrating the prestige and significance of IEEE Senior Member elevation in the technical community.
+
+\end{thebibliography}
+
+\pagebreak
+
+%% Exhibit macros
+\newcommand{\ip}[1]{\includepdf[pages=-]{#1}}
+\newcommand{\ex}[2]{
+\title{\textbf{\huge{Exhibit #1}}\\
+\vspace{3em}
+\Large{#2}
+}
+\author{}
+\maketitle
+}
+
+%% ========================================
+%% EXHIBITS FOR ORIGINAL CONTRIBUTION CRITERIA
+%% ========================================
+
+\ex{OR-1}{Design Patterns for AI Agents - Technical Book}
+\ip{criteria/original/evidence/AgentSystemDesign_vivek_IEEE.pdf}
+
+\ex{OR-2}{Appreciation Letter from Anand International College of Engineering}
+\ip{criteria/original/evidence/Appreciation Letter_Mr. Vivek Kumar Mishra.pdf}
+
+\ex{OR-3}{Industry Peer Testimonial - Book Recognition}
+\ip{criteria/original/evidence/bookPost.pdf}
+
+\ex{OR-4}{Faculty Development Programme (FDP) Speaker Schedule}
+\ip{criteria/original/evidence/FDP_Program.pdf}
+
+\ex{OR-5}{JPMorgan Chase - The Shops at Chase Press Release}
+\ip{criteria/original/evidence/Announcing The Shops at Chase – A New Way for Chase Cardmembers to Shop and Save.pdf}
+
+\ex{LOR-6}{Letter of Recommendation from Dr. Maxim A. Dulebenets}
+\ip{criteria/scholar/LOR/MaximLetter.pdf}
+
+\ex{OR-6}{Speaker Recognition Photo - Faculty Development Programme}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{criteria/original/evidence/Er Vivek.jpg}
+\end{center}
+\newpage
+
+\ex{OR-7}{JPMorgan Chase Production System Metrics (Splunk Dashboard)}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/original/evidence/chaseWork.png}
+\end{center}
+\newpage
+
+%% ========================================
+%% EXHIBITS FOR JUDGING CRITERIA
+%% ========================================
+
+%% OpenReview Evidence: ICLR 2025 FM-Wild Workshop
+\ex{JR-1}{ICLR 2025 FM-Wild Workshop Reviewer Invitation}
+\ip{criteria/judge/evidence/OpenReview/Gmail - [ICLR 2025 FM-Wild Workshop] Invitation to serve as Reviewer.pdf}
+
+\ex{JR-2}{ICLR 2025 FM-Wild Official Review Posted Confirmation}
+\ip{criteria/judge/evidence/OpenReview/Gmail - [ICLR 2025 FM-Wild Workshop] Official Review posted to your assigned Paper number_ 62, Paper title_ _All It Takes Is One Prompt_ An Autonomous LLM-MA System_.pdf}
+
+\ex{JR-3}{ICLR 2025 FM-Wild Review Received Confirmation}
+\ip{criteria/judge/evidence/OpenReview/Gmail - [ICLR 2025 FM-Wild Workshop] Your official review has been received on your assigned Paper number_ 62, Paper title_ _All It Takes Is One Prompt_ An Autonomous LLM-MA System_.pdf}
+
+%% OpenReview Evidence: NeurIPS 2025
+\ex{JR-4}{NeurIPS 2025 Position Paper Track Reviewer Invitation}
+\ip{criteria/judge/evidence/OpenReview/Gmail - [NeurIPS 2025 Position Paper Track] Invitation to serve as Reviewer.pdf}
+
+\ex{JR-5}{NeurIPS 2025 Paper Assignment Screenshot}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/OpenReview/NeurIPS_paper_to_review.png}
+\newpage
+
+%% MicrosoftCMT Evidence: GSP 2025
+\ex{JR-6}{Graph Signal Processing Workshop 2025 Reviewer Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - Reviewer Invitation for Graph Signal Processing Workshop 2025.pdf}
+
+\ex{JR-7}{GSP 2025 Paper 17 Assignment}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - GSP2025 _ Paper 17.pdf}
+
+%% MicrosoftCMT Evidence: ACDSA 2026
+\ex{JR-8}{ACDSA 2026 Reviewer Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - Invitation to review submission for The 3rd International Conference on Artificial Intelligence, Computer, Data Sciences and Applications.pdf}
+
+\ex{JR-9}{ACDSA 2026 Paper 1105 Review}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - ACDSA2026 _ Paper 1105.pdf}
+
+%% MicrosoftCMT Evidence: Bengali Sentiment Analysis
+\ex{JR-10}{Bengali Sentiment Analysis Review Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/Bengali Sentiment Analysis_invitation_.pdf}
+
+%% IEEE Review Panel Evidence
+\ex{JR-11}{IEEE Senior Member Application Virtual Review Panel Invitation (June 2025)}
+\ip{criteria/judge/evidence/IEEE Review/Invitation to the Senior Member Application Virtual Review Panel - June 2025.pdf}
+
+\ex{JR-12}{IEEE Senior Member Panel Completion (June 29, 2025)}
+\ip{criteria/judge/evidence/IEEE Review/COMPLETE - 29-Jun-2025 Senior Member Panel.pdf}
+
+\ex{JR-13}{IEEE Senior Member Panelist Thank You Letter}
+\ip{criteria/judge/evidence/IEEE Review/Thank you letter template-SM Panelist_100495418.pdf}
+
+%% Hackathon Evidence: Journal Reviews
+\ex{JR-14}{Virtus InterPress - Risk Governance and Control Journal Review}
+\ip{criteria/judge/evidence/hackathon/Virtus_1review_Risk Governance and Control_ Financial Markets & Institution.pdf}
+
+\ex{JR-15}{Virtus InterPress - Corporate \& Business Strategy Review}
+\ip{criteria/judge/evidence/hackathon/Virtus_2_Regarding review_Corporate & Business Strategy Review.pdf}
+
+\ex{JR-16}{Informatica Journal Article Review Request}
+\ip{criteria/judge/evidence/hackathon/Informatica_Article Review Request.pdf}
+
+%% Hackathon Evidence: Competition Judging
+\ex{JR-17}{PennApps Judge Certification Letter (University of Pennsylvania)}
+\ip{criteria/judge/evidence/hackathon/Judge Certification Letter - Vivek (2).pdf}
+
+\ex{JR-18}{DragonHacks 2024 Judge Documentation}
+\ip{criteria/judge/evidence/hackathon/DrgonHacks.pdf}
+
+\ex{JR-19}{Claro Judge 2024 Certification Letter}
+\ip{criteria/judge/evidence/hackathon/VivekMishra_ClaroJudge24.pdf}
+
+\ex{JR-20}{Acknowledgement Letter}
+\ip{criteria/judge/evidence/hackathon/acknowledgement letter.pdf}
+
+%% Screenshots
+\ex{JR-21}{Additional Judging Evidence Screenshot 1}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/hackathon/Screenshot 2024-12-05 at 10.56.35 PM.png}
+\newpage
+
+\ex{JR-22}{Additional Judging Evidence Screenshot 2}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/hackathon/Screenshot 2024-12-26 at 8.59.10 AM.png}
+\newpage
+
+\ex{JR-23}{Additional Judging Evidence Screenshot 3}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/hackathon/Screenshot 2024-12-26 at 9.01.46 AM.png}
+\newpage
+
+%% ========================================
+%% EXHIBITS FOR SCHOLARLY ARTICLES CRITERIA
+%% ========================================
+
+\ex{SR-1}{Integrating Solar Photovoltaic Systems into the Grid: An Overview of AI Applications}
+\ip{criteria/scholar/evidence/Integrating-Solar-Photovoltaic-Systems-into-the-Grid-An-Overview-of-AI-Application.pdf}
+
+\ex{SR-2}{The Role of Generative AI}
+\ip{criteria/scholar/evidence/The Role of Generative AI.pdf}
+
+\ex{SR-3}{MDPI Sustainability Journal Publication}
+\ip{criteria/scholar/evidence/sustainability-16-08077.pdf}
+
+\ex{SR-4}{Connectivity Evaluations}
+\ip{criteria/scholar/evidence/Connectivity evaluations.pdf}
+
+\ex{SR-5}{Evaluating Financing Mechanisms and Economic Benefits}
+\ip{criteria/scholar/evidence/Evaluating Financing Mechanisms and Economic Benefits to Fund Gra.pdf}
+
+\ex{SR-6}{Evaluating Innovative Financing}
+\ip{criteria/scholar/evidence/Evaluating Innovative Financing.pdf}
+
+\ex{SR-7}{Funding High Speed Infrastructure}
+\ip{criteria/scholar/evidence/FundingHighSpeed.pdf}
+
+\ex{SR-8}{Optimizing Multimodal Transportation Access to Support Commuting}
+\ip{criteria/scholar/evidence/Optimizing Multimodal Transportation Access to Support Commuting.pdf}
+
+\ex{SR-9}{Citation Profile and Publication Metrics}
+% Screenshot renamed - see note below
+\begin{center}
+\textbf{[Citation Profile - Rename screenshot to citation\_profile.png]}
+\end{center}
+\newpage
+
+\end{document}

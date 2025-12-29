@@ -1,0 +1,35 @@
+# EB-1A Petition Template
+
+## LaTeX Files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+
+# Keep the main PDF but ignore intermediate builds
+# main.pdf
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backup files
+*.bak
+*~
