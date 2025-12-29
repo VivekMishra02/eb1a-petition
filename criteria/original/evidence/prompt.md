@@ -27,8 +27,6 @@ Make sure the bibliography and the exhibits are in the right sequence for origin
 
 For the above Task you will approach divide and conquer to write the complete original contribution criteria. 
 
-You should be focusing on patents (and subsections for the patents), book, chaos, and then hardware trojan. 
-
 step 3: Read all the citations from https://scholar.google.com/citations?user=BvG76iMAAAAJ&hl=en and update the original.tex file with the citations as original contribution and explain it's significance and impact. Also read /Users/vivekmishra/Downloads/eb1_template/criteria/scholar/scholar.tex and update the original.tex file with the citations as original contribution and explain it's significance and impact.
 
 STEP 4: 
