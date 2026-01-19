@@ -28,7 +28,7 @@
 \date{}
 
 \makeatletter
-\renewcommand\@bibitem[1]{\item\if@filesw \immediate\write\@auxout
+\renewcommand\@bibitem[1]{\item\hypertarget{cite.#1}{}\if@filesw \immediate\write\@auxout
     {\string\bibcite{#1}{Exhibit \the\value{\@listctr}}}\fi\ignorespaces}% <------------
 \def\@biblabel#1{Exhibit #1:}% <-------------------
 \makeatother
