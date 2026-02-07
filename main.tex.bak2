@@ -1,0 +1,845 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=2.1cm]{geometry}
+\setlength{\headheight}{14pt}
+\usepackage[utf8]{inputenc}
+% \usepackage{dirtytalk} % Replaced with custom definition below
+\newcommand{\say}[1]{``#1''}
+\usepackage{titling} % multiple title pages
+
+% \usepackage{bookmark}% http://ctan.org/pkg/bookmark
+
+\usepackage{pdfpages}
+\usepackage{soul}
+\pdfminorversion=7
+
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=false,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+}
+
+
+\title{}
+% \author{Rahul Vishwakarma}
+\date{}
+
+\makeatletter
+\renewcommand\@bibitem[1]{\item\hypertarget{cite.#1}{}\if@filesw \immediate\write\@auxout
+    {\string\bibcite{#1}{Exhibit \the\value{\@listctr}}}\fi\ignorespaces}% <------------
+\def\@biblabel#1{Exhibit #1:}% <-------------------
+\makeatother
+
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[labelfont=bf]{caption}
+% \usepackage[nolists]{endfloat}
+\usepackage{setspace}\setstretch{1.167} % prerequisite of geometry
+% \usepackage[textwidth=17.0cm, lines=42, hcentering]{geometry}
+% \usepackage[colorlinks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage{tfrupee} % Support for Indian Rupee symbol
+\usepackage[british, cleanlook]{isodate}
+\usepackage[pagewise, modulo, displaymath, mathlines]{lineno}
+\usepackage[expansion=false]{microtype}
+%\usepackage[medfamily, textlf, mathlf]{MyriadPro}\renewcommand{\familydefault}{\sfdefault}
+\usepackage[amssymb]{SIunits}
+% \usepackage[bib, enum, eqno, lineno, toc]{tabfigures}
+
+\usepackage{fancyhdr}
+\usepackage{soul}
+\usepackage{tikz}
+\setlength\parindent{0pt}
+\newcommand{\mybullet}{\,\textbullet\,}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+%\tikz[remember picture, overlay] \node at (current page.center) {\includegraphics{outline_letterhead}};
+\renewcommand{\headrulewidth}{1pt}
+% \cfoot{\vspace{-5em}\textbf{\so{\MakeUppercase{Razvan V. Marinescu}}}\\\smallskip\footnotesize Postdoctoral Associate in Artificial Intelligence for Healthcare\\ 
+
+\lhead{EB-1A Permanent Residence Petition for Vivek Kumar Mishra}
+% \rhead{\thepage}
+\cfoot{\thepage}
+
+
+
+
+\begin{document}
+\newcommand{\tc}[1]{\textcolor{blue}{#1}}
+\newcommand{\dr}{Mr.~Mishra\ }
+\newcommand{\drs}{Mr.~Mishra's\ }
+
+% \input{cover/toc.tex}
+\input{cover/initial_evidence.tex}
+\input{cover/summary.tex}
+
+\section{Proof of \drs Extraordinary Ability}
+
+% EB1A Criteria 1: Original Contributions
+\subsection{Evidence of original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field}
+\label{sec:original}
+\input{criteria/original/original.tex}
+
+% EB1A Criteria 2: Scholarly Articles
+\subsection{Evidence of authorship of scholarly articles in professional or major trade publications or other major media}
+\label{sec:scholar}
+\input{criteria/scholar/scholar.tex}
+
+% EB1A Criteria 3: Judging the Work of Others
+\subsection{Evidence of participation as a judge of the work of others in the same or an allied field of specialization}
+\label{sec:judge}
+\input{criteria/judge/judge.tex}
+
+% EB1A Criteria 4: Critical Role
+\subsection{Evidence of performance in a leading or critical role for organizations or establishments with a distinguished reputation}
+\label{sec:critical}
+\input{criteria/critical/critical.tex}
+
+% EB1A Criteria 5: Membership
+\subsection{Evidence of membership in associations in the field which require outstanding achievements of their members}
+\label{sec:member}
+\input{criteria/member/member.tex}
+
+% EB1A Criteria 6: Published Material About the Alien
+\subsection{Evidence of published material about the alien in professional or major trade publications or other major media}
+\label{sec:media}
+\input{criteria/media/media.tex}
+
+% EB1A Criteria 7: High Salary - REMOVED
+% Salary criterion removed from petition as it does not strengthen the case
+% \subsection{Evidence that the alien has commanded a high salary, or other significantly high remuneration for services, in relation to others in the field}
+% \label{sec:salary}
+% \input{criteria/salary/salary.tex}
+
+%% Legal Argument: Mukherji v. Miller
+\input{criteria/mukherji_argument.tex}
+
+%% Bibliography for Judging Criteria
+\renewcommand\refname{List of Exhibits}
+
+\begin{thebibliography}{99}
+
+\subsection*{Evidence of Original Contributions of Major Significance}
+
+\bibitem{OR1}
+\textbf{Exhibit OR-1}: Design Patterns for AI Agents - Technical Book.
+\\Full text of ``Design Patterns for AI Agents: A Structured Approach to Building Robust and Intelligent Systems'' (ISBN: 979-8268912371).
+
+\bibitem{OR2}
+\textbf{Exhibit OR-2}: Appreciation Letter from Anand International College of Engineering.
+\\Official letter confirming adoption of \drs book into the permanent Central Library collection.
+
+\bibitem{OR3}
+\textbf{Exhibit OR-3}: Industry Peer Testimonial - Book Recognition.
+\\Testimonial from practicing software engineer recognizing the practical value of \drs technical framework.
+
+\bibitem{OR4}
+\textbf{Exhibit OR-4}: Faculty Development Programme (FDP) Speaker Schedule.
+\\Programme schedule showing \dr as ``Eminent Speaker'' at the 5-day AI/ML Faculty Development Programme.
+
+\bibitem{OR5}
+\textbf{Exhibit OR-5}: JPMorgan Chase - The Shops at Chase Press Release.
+\\Official press release announcing the launch of The Shops at Chase e-commerce platform.
+
+\textbf{Exhibit LOR-6}: Letter of Recommendation from Dr. Maxim A. Dulebenets.
+\\Expert testimonial from Associate Professor at FAMU-FSU College of Engineering regarding the adoption of \drs research methodologies.
+
+\bibitem{LOR7}
+\textbf{Exhibit LOR-7}: Letter of Recommendation from Sinchan Banerjee.
+\\Expert testimonial from Director I - Enterprise Architecture at UST regarding \drs AI, backend engineering, and research contributions.
+
+
+\bibitem{OR6}
+\textbf{Exhibit OR-6}: Speaker Recognition Photo - Faculty Development Programme.
+\\Photograph of \dr presenting as ``Eminent Speaker'' at the 5-day AI/ML Faculty Development Programme at Anand International College of Engineering.
+
+\bibitem{OR7}
+\textbf{Exhibit OR-7}: JPMorgan Chase Production System Metrics (Splunk Dashboard).
+\\Screenshot from Splunk Enterprise dashboard showing \drs Chase Shopping Services platform metrics: 5,012,443 user requests and 22,623 orders processed monthly with 99.9\% success rate.
+
+\bibitem{OR8}
+\textbf{Exhibit OR-8}: The Shops at Chase Launch Day Team Photo.
+\\Photograph of \dr and the engineering team on the public launch day of The Shops at Chase platform in June 2025, demonstrating his critical role as a founding engineer on this mission-critical JPMorgan Chase initiative.
+
+\bibitem{RV1}
+\textbf{Exhibit RV-1}: Letter of Recommendation from Rahul Vishwakarma, Research Engineer at WorkOnward.
+\\Expert testimony from Rahul Vishwakarma (Research Engineer at WorkOnward, Techstars '23; 60+ U.S. patents in AI and distributed systems) attesting to \drs contributions in AI agent design patterns, distributed systems, and AI-based data methodologies for public sector applications.
+
+\bibitem{OR9}
+\textbf{Exhibit OR-9}: Curriculum Adoption Email from Supaul College of Engineering.
+\\Official email from Prof. Sunil Kumar Suman (sunil524@bihar.gov.in), Assistant Professor of Computer Science at Supaul College of Engineering (government institution under Government of Bihar), confirming formal recommendation of \drs book ``Design Patterns for AI Agents'' as a required reference for 47 students in the 5th Semester/3rd Year CSE(AI) curriculum.
+
+\bibitem{OR1B}
+\textbf{Exhibit OR-1.B}: Research Assistant Appointment Letter from California State University, Long Beach.
+\\Official appointment letter from Dr. Shailesh Chandra, Assistant Professor in the Department of Civil Engineering and Construction Engineering Management, appointing \dr as Student Research Assistant for federally-funded intelligent transportation systems research (February 7, 2020). Letter explicitly cites \drs ``programming skills in Python'' as the basis for recruitment by a non-CS department (Civil Engineering) for U.S. DOT-funded research, demonstrating his role as the essential technical architect bridging AI methodologies with civil infrastructure applications.
+
+\subsection*{Evidence of Judging and Reviewing Work}
+
+%% OpenReview Evidence: ICLR 2025 FM-Wild Workshop
+\bibitem{JR1}
+\textbf{Exhibit JR-1}: ICLR 2025 FM-Wild Workshop Reviewer Invitation.
+\\Email invitation to serve as reviewer for the FM-Wild (Foundation Models in the Wild) Workshop at ICLR 2025.
+
+\bibitem{JR2}
+\textbf{Exhibit JR-2}: ICLR 2025 FM-Wild Official Review Posted Confirmation.
+\\Evidence that \drs official review was posted for Paper 62 ``All It Takes Is One Prompt: An Autonomous LLM-MA System.''
+
+\bibitem{JR3}
+\textbf{Exhibit JR-3}: ICLR 2025 FM-Wild Review Received Confirmation.
+\\Confirmation from workshop organizers that \drs review was received for the assigned paper.
+
+%% OpenReview Evidence: NeurIPS 2025
+\bibitem{JR4}
+\textbf{Exhibit JR-4}: NeurIPS 2025 Position Paper Track Reviewer Invitation.
+\\Email invitation to serve as reviewer for NeurIPS 2025 Position Paper Track.
+
+\bibitem{JR5}
+\textbf{Exhibit JR-5}: NeurIPS 2025 Paper Assignment Screenshot.
+\\Screenshot showing papers assigned to \dr for review in NeurIPS 2025.
+
+%% MicrosoftCMT Evidence: GSP 2025
+\bibitem{JR6}
+\textbf{Exhibit JR-6}: Graph Signal Processing Workshop 2025 Reviewer Invitation.
+\\Email invitation to review for GSP 2025.
+
+\bibitem{JR7}
+\textbf{Exhibit JR-7}: GSP 2025 Paper 17 Assignment.
+\\Evidence of Paper 17 assignment for review at GSP 2025.
+
+%% MicrosoftCMT Evidence: ACDSA 2026
+\bibitem{JR8}
+\textbf{Exhibit JR-8}: ACDSA 2026 Reviewer Invitation.
+\\Email invitation to review for The 3rd International Conference on AI, Computer, Data Sciences and Applications.
+
+\bibitem{JR9}
+\textbf{Exhibit JR-9}: ACDSA 2026 Paper 1105 Review.
+\\Evidence of review for Paper 1105 at ACDSA 2026.
+
+%% MicrosoftCMT Evidence: Bengali Sentiment Analysis
+\bibitem{JR10}
+\textbf{Exhibit JR-10}: Bengali Sentiment Analysis Review Invitation.
+\\Invitation to review Bengali Sentiment Analysis research.
+
+%% IEEE Review Panel Evidence
+\bibitem{JR11}
+\textbf{Exhibit JR-11}: IEEE Senior Member Application Virtual Review Panel Invitation (June 2025).
+\\Invitation letter to serve on the IEEE Senior Member Application Review Panel.
+
+\bibitem{JR12}
+\textbf{Exhibit JR-12}: IEEE Senior Member Panel Completion (June 29, 2025).
+\\Documentation of \drs completion of IEEE Senior Member application review panel duties.
+
+\bibitem{JR13}
+\textbf{Exhibit JR-13}: IEEE Senior Member Panelist Thank You Letter.
+\\Official thank you letter from IEEE acknowledging \drs service on the Senior Member review panel.
+
+%% Hackathon Evidence: Journal Reviews
+\bibitem{JR14}
+\textbf{Exhibit JR-14}: Virtus InterPress - Risk Governance and Control Journal Review.
+\\Peer review invitation for Risk Governance and Control: Financial Markets \& Institutions journal.
+
+\bibitem{JR15}
+\textbf{Exhibit JR-15}: Virtus InterPress - Corporate \& Business Strategy Review.
+\\Peer review invitation for Corporate \& Business Strategy Review journal.
+
+\bibitem{JR16}
+\textbf{Exhibit JR-16}: Informatica Journal Article Review Request.
+\\Invitation to review research article for Informatica journal.
+
+%% Hackathon Evidence: Competition Judging
+\bibitem{JR17}
+\textbf{Exhibit JR-17}: PennApps Judge Certification Letter (University of Pennsylvania).
+\\Official judge certification for PennApps, the premier collegiate hackathon at the University of Pennsylvania.
+
+\bibitem{JR18}
+\textbf{Exhibit JR-18}: DragonHacks 2024 Judge Documentation.
+\\Evidence of \drs role as judge for DragonHacks 2024 hackathon.
+
+\bibitem{JR19}
+\textbf{Exhibit JR-19}: Claro Judge 2024 Certification Letter.
+\\Official certification of \drs role as judge for Claro 2024.
+
+\bibitem{JR20}
+\textbf{Exhibit JR-20}: Acknowledgement Letter.
+\\Acknowledgement letter documenting \drs judging contributions.
+
+\bibitem{JR21}
+\textbf{Exhibit JR-21}: Informatica Journal Active Reviewer Dashboard.
+\\Screenshot of Informatica journal reviewer dashboard showing \drs active reviewer status with multiple article review assignments.
+
+%% NeurIPS 2025 Position Paper Reviews - OpenReview Evidence
+\bibitem{JR24}
+\textbf{Exhibit JR-24}: NeurIPS 2025 Paper 110 - ``AI-Driven Automation Can Become the Foundation of Next-Era Science of Science Research'' (OpenReview Page).
+\\Full OpenReview submission page for NeurIPS 2025 Position Paper Track Paper 110, showing the paper under review.
+
+\bibitem{JR25}
+\textbf{Exhibit JR-25}: NeurIPS 2025 Paper 110 - Official Review Posted Confirmation.
+\\Email confirmation that \drs official review was posted for Paper 110 at NeurIPS 2025 Position Paper Track.
+
+\bibitem{JR26}
+\textbf{Exhibit JR-26}: NeurIPS 2025 Paper 156 - ``Modern Power Systems Need Tailored AI for Energy Forecasting'' (OpenReview Page).
+\\Full OpenReview submission page for NeurIPS 2025 Position Paper Track Paper 156.
+
+\bibitem{JR27}
+\textbf{Exhibit JR-27}: NeurIPS 2025 Paper 156 - Official Review Posted Confirmation.
+\\Email confirmation that \drs official review was posted for Paper 156 at NeurIPS 2025 Position Paper Track.
+
+\bibitem{JR28}
+\textbf{Exhibit JR-28}: NeurIPS 2025 Paper 598 - ``The Net Climate Impact of AI: Balancing Current Costs with Future Climate Benefits'' (OpenReview Page).
+\\Full OpenReview submission page for NeurIPS 2025 Position Paper Track Paper 598.
+
+\bibitem{JR29}
+\textbf{Exhibit JR-29}: NeurIPS 2025 Paper 598 - Official Review Posted Confirmation.
+\\Email confirmation that \drs official review was posted for Paper 598 at NeurIPS 2025 Position Paper Track.
+
+\subsection*{Evidence of Authorship of Scholarly Articles}
+
+\bibitem{SR1}
+\textbf{Exhibit SR-1}: Integrating Solar Photovoltaic Systems into the Grid: An Overview of AI Application.
+\\Peer-reviewed scholarly article on AI applications for renewable energy grid integration.
+
+\bibitem{SR2}
+\textbf{Exhibit SR-2}: The Role of Generative AI in Revolutionizing Healthcare, Education, and Finance: A Mini Review.
+\\Peer-reviewed scholarly article on generative AI applications across critical sectors.
+
+\bibitem{SR3}
+\textbf{Exhibit SR-3}: MDPI Sustainability Journal Publication (sustainability-16-08077).
+\\Peer-reviewed article published in MDPI Sustainability (Impact Factor: 3.9, Scopus Q2).
+
+\bibitem{SR4}
+\textbf{Exhibit SR-4}: Framework for Rail Transport Inequality Assessment: A Case Study of the Indian Railway Zones with Superfast Express (SE) Trains.
+\\Most cited publication with 15 citations. Also includes Connectivity Evaluations of Indian Railways Zones with Superfast Express (SE) Trains.
+
+\bibitem{SR5}
+\textbf{Exhibit SR-5}: Evaluating Financing Mechanisms and Economic Benefits to Fund Grade Separation Projects.
+\\Peer-reviewed publication with 12 citations on infrastructure financing and economic analysis.
+
+\bibitem{SR6}
+\textbf{Exhibit SR-6}: Evaluating Innovative Financing Mechanisms for the California High-Speed Rail Project.
+\\Peer-reviewed scholarly article with 7 citations on financing mechanisms for California High-Speed Rail.
+
+\bibitem{SR7}
+\textbf{Exhibit SR-7}: Funding the High-Speed Rail: A Case Study of the California Project.
+\\Peer-reviewed publication with 3 citations on funding mechanisms for California High-Speed Rail.
+
+\bibitem{SR8}
+\textbf{Exhibit SR-8}: Optimizing Multimodal Transportation Access to Support Commuting Among Low-Income Transit Riders with Social Distancing.
+\\Peer-reviewed article on AI-driven transportation optimization and equity for low-income transit riders.
+
+\bibitem{SR9}
+\textbf{Exhibit SR-9}: Google Scholar Citation Profile and Publication Metrics.
+\\Screenshot documenting \drs 37 total citations, h-index of 3, and publication record.
+
+\subsection*{Evidence of Membership in Associations Requiring Outstanding Achievements}
+
+\bibitem{ieeehistory}
+\textbf{Exhibit M-1}: IEEE History and Organization Information.
+\\Evidence of IEEE's distinguished reputation as the world's largest technical professional organization, founded in 1884, with over 460,000 members in 190+ countries.
+
+\bibitem{ieeeseniormemberbylaw}
+\textbf{Exhibit M-2}: IEEE Bylaw I-104.3 - Senior Member Grade Requirements.
+\\Official IEEE bylaws specifying the requirements for Senior Member grade, including ten years of professional practice and five years of significant performance.
+
+\bibitem{ieeeseniorresults}
+\textbf{Exhibit M-3}: IEEE Senior Member Elevation Notification for \dr.
+\\Official email notification from IEEE Member Services confirming \drs elevation to Senior Member grade (Member Number: 100495418) in November 2024.
+
+\bibitem{ieeevouchers}
+\textbf{Exhibit M-4}: IEEE Senior Member Reference Letters and Vouchers.
+\\Documentation of the three IEEE Senior Member/Fellow references who evaluated and endorsed \drs application for Senior Member elevation.
+
+\bibitem{ieeemembercard}
+\textbf{Exhibit M-5}: IEEE Senior Member Certificate and Membership Card.
+\\Official IEEE Senior Member certificate and membership card confirming \drs Senior Member grade status.
+
+\bibitem{ieeeypmember}
+\textbf{Exhibit M-6}: IEEE Young Professionals and Technical Society Membership.
+\\Evidence of \drs active participation in IEEE Signal Processing Society and IEEE Young Professionals communities.
+
+\bibitem{ieeeseniornews}
+\textbf{Exhibit M-7}: News Article on IEEE Senior Member Elevation Significance.
+\\Third-party news coverage demonstrating the prestige and significance of IEEE Senior Member elevation in the technical community.
+
+\subsection*{Evidence of Performance in a Leading or Critical Role}
+
+\bibitem{CR1}
+\textbf{Exhibit CR-1}: JPMorgan Chase Press Release - The Shops at Chase Launch.
+\\Official press release announcing the launch of The Shops at Chase e-commerce platform in June 2025, serving 80+ million Chase cardmembers.
+
+\bibitem{CR2}
+\textbf{Exhibit CR-2}: Letter of Recommendation from Corey Graham, Director of Software Engineering.
+\\Detailed letter from Corey Graham (23 years experience) attesting to \drs critical role in building the Chase Shopping Hub backend infrastructure.
+
+\bibitem{CR3}
+\textbf{Exhibit CR-3}: Chase Shopping Services Production Metrics (Splunk Dashboard).
+\\Screenshot from Splunk Enterprise showing production metrics: 5,012,443 user requests, 22,623 orders, and 99.9\% success rate.
+
+\bibitem{CR4}
+\textbf{Exhibit CR-4}: VP-Level Appreciation for Chase Shopping Hub Contributions.
+\\Internal appreciation from JPMorgan Chase VP-level leadership recognizing \drs work on the platform.
+
+\bibitem{CR5}
+\textbf{Exhibit CR-5}: Leadership Appreciation from Tracy at JPMorgan Chase.
+\\Additional leadership recognition for \drs contributions to the Chase Shopping Hub project.
+
+\bibitem{CR6}
+\textbf{Exhibit CR-6}: Appreciation from Kalyan for Chase Project Contributions.
+\\Internal appreciation recognizing \drs technical contributions to the Chase Shopping platform.
+
+\bibitem{CR7}
+\textbf{Exhibit CR-7}: Code Coverage and System Metrics.
+\\Technical metrics documenting the quality and reach of \drs backend services.
+
+\bibitem{CR9}
+\textbf{Exhibit CR-9}: AWS Certified Cloud Practitioner Certificate.
+\\Professional certification demonstrating \drs expertise in Amazon Web Services cloud technologies.
+
+\bibitem{CR10}
+\textbf{Exhibit CR-10}: Letter of Recommendation from Sumit Bhatnagar, Vice President of Engineering.
+\\Detailed letter from Vice President in JPMorgan Chase Technology Division (IEEE Senior Member, Forbes Technology Council, IETE Fellow) independently validating \drs critical role with quantified metrics: \sim $100,000 cost savings, 43\% response time improvement, and governance of 30 engineers.
+
+\bibitem{CR11}
+\textbf{Exhibit CR-11}: Employment Verification Letter from JPMorgan Chase.
+\\Official documentation verifying \drs current employment and position at JPMorgan Chase.
+
+\bibitem{CR12}
+\textbf{Exhibit CR-12}: Official Job Offer Letter for Senior Software Engineer Position.
+\\Original offer letter from JPMorgan Chase documenting \drs selection for the Senior Software Engineer role (October 2021).
+
+\bibitem{CR13}
+\textbf{Exhibit CR-13}: Research Assistant Offer Letter from California State University, Long Beach.
+\\Official offer letter from Dr. Shailesh Chandra, Assistant Professor in the Department of Civil Engineering and Construction Engineering Management at CSULB, documenting research assistantship position (February 2020).
+
+\subsection*{Evidence of Published Material About the Alien}
+
+\bibitem{PM1}
+\textbf{Exhibit PM-1}: TechBullion Exclusive Interview with Vivek Mishra.
+\\Full-length interview titled ``TechBullion Exclusive: An Interview with Vivek Mishra on Backend Engineering, Mentorship, and Driving Cloud Innovation'' authored by Ahmed Raza. Publication: TechBullion (230K monthly visitors). URL: https://techbullion.com/techbullion-exclusive-an-interview-with-vivek-mishra-on-backend-engineering-mentorship-and-driving-cloud-innovation/
+
+\bibitem{PM2}
+\textbf{Exhibit PM-2}: IEEE Transmitter Impact Creators Profile.
+\\Official profile page on IEEE Transmitter featuring \dr as an IEEE Young Creator. Publication: IEEE Transmitter (460K+ IEEE members). URL: https://transmitter.ieee.org/author/vivekmishra/
+
+\bibitem{PM3}
+\textbf{Exhibit PM-3}: IEEE.tv Speaker Profile Page.
+\\Official speaker profile on IEEE.tv with detailed biography of \drs work. Publication: IEEE.tv (award-winning IEEE television network). URL: https://ieeetv.ieee.org/speaker/vivek-mishra
+
+\bibitem{PM4}
+\textbf{Exhibit PM-4}: IEEE Official Twitter/X Features.
+\\Screenshots of two features on IEEE's official X (Twitter) account (342.9K followers). URLs: https://x.com/IEEEorg/status/1885055454377595129 and https://x.com/IEEEorg/status/1961166714051371080
+
+\bibitem{PM5}
+\textbf{Exhibit PM-5}: Dainik Bhaskar Newspaper Article (Original Hindi).
+\\Original newspaper article from Dainik Bhaskar (Jaipur Edition), India's \#1 Hindi newspaper with 63 million readers. Date: December 14, 2024.
+
+\bibitem{PM6}
+\textbf{Exhibit PM-6}: Dainik Bhaskar Article - Certified English Translation.
+\\Certified English translation of the Dainik Bhaskar article pursuant to 8 C.F.R. § 103.2(b)(3).
+
+\bibitem{PM7}
+\textbf{Exhibit PM-7}: Rajasthan Patrika Newspaper Article.
+\\Article from Rajasthan Patrika (25.9 million readers) covering \drs keynote presentation at Anand International College of Engineering. Includes English translation.
+
+\bibitem{PM8}
+\textbf{Exhibit PM-8}: First India News Article.
+\\Article from First India news organization (4.4M+ YouTube subscribers) covering \drs speaking engagement.
+
+\bibitem{PM9}
+\textbf{Exhibit PM-9}: TechTarget Article - Future of Generative AI.
+\\Article titled ``The future of generative AI: 10 trends to follow in 2025'' authored by Mary K. Pratt (award-winning journalist). Publication: TechTarget (1.4M+ daily readership). URL: https://www.techtarget.com/searchenterpriseai/feature/The-future-of-generative-AI-Trends-to-follow
+
+\bibitem{PM10}
+\textbf{Exhibit PM-10}: TechTarget Article - AI Sustainability.
+\\Article titled ``Generative AI's sustainability problems explained'' authored by Mary K. Pratt. Publication: TechTarget (1.4M+ daily readership). URL: https://www.techtarget.com/sustainability/feature/Generative-AIs-sustainability-problems-explained
+
+\bibitem{PM11}
+\textbf{Exhibit PM-11}: Dice.com Career Advice Article.
+\\Article titled ``Database Administrators and AI: What to Know, How to Grow'' quoting \dr as IEEE Senior Member expert. Publication: Dice.com (2.4M monthly visitors). URL: https://www.dice.com/career-advice/database-administrators-and-ai-what-to-know-how-to-grow
+
+\bibitem{PM12}
+\textbf{Exhibit PM-12}: VKTR.com Enterprise AI Article.
+\\Article titled ``Do AI Coding Tools Really Increase Developer Productivity? Studies Say No'' authored by Nathan Eddy quoting \dr as IEEE Senior Member expert. Publication: VKTR.com (Simpler Media Group, 7M+ readers). URL: https://www.vktr.com/ai-technology/do-ai-coding-tools-really-increase-developer-productivity-studies-say-no/
+% SALARY SECTION - REMOVED
+% \subsection*{Evidence of High Salary or Significantly High Remuneration}
+
+
+% SALARY EXHIBITS - REMOVED
+% \bibitem{SAL1}
+% \textbf{Exhibit SAL-1}: Oracle Financial Services Software Limited Offer Letter.
+% \\Official offer letter documenting \drs compensation of \rupee11,00,000 per annum plus bonus and stock options at Oracle India (2018).
+% 
+% \bibitem{SAL2}
+% \textbf{Exhibit SAL-2}: PayScale Software Engineer Salary Data (India).
+% \\Authoritative compensation data from PayScale showing average software engineer salary in India. Source: https://www.payscale.com/research/IN/Job=Software\_Engineer/Salary
+% 
+% \bibitem{SAL3}
+% \textbf{Exhibit SAL-3}: India IT Industry Salary Benchmarks.
+% \\Industry salary data from NASSCOM, Glassdoor, and other authoritative sources documenting software engineer compensation in India (2018).
+
+
+\end{thebibliography}
+
+\pagebreak
+
+%% Exhibit macros
+\newcommand{\ip}[1]{\includepdf[pages=-]{#1}}
+\newcommand{\ex}[2]{
+\phantomsection
+\hypertarget{exhibit:#1}{}
+\title{\textbf{\huge{Exhibit #1}}\\
+\vspace{3em}
+\Large{#2}
+}
+\author{}
+\maketitle
+}
+
+%% ========================================
+%% EXHIBITS FOR ORIGINAL CONTRIBUTION CRITERIA
+%% ========================================
+
+\ex{OR-1}{Design Patterns for AI Agents - Technical Book}
+\ip{criteria/original/evidence/AgentSystemDesign_vivek_IEEE.pdf}
+
+\ex{OR-2}{Appreciation Letter from Anand International College of Engineering}
+\ip{criteria/original/evidence/Appreciation Letter_Mr. Vivek Kumar Mishra.pdf}
+
+\ex{OR-3}{Industry Peer Testimonial - Book Recognition}
+\ip{criteria/original/evidence/bookPost.pdf}
+
+\ex{OR-4}{Faculty Development Programme (FDP) Speaker Schedule}
+\ip{criteria/original/evidence/FDP_Program.pdf}
+
+\ex{OR-5}{JPMorgan Chase - The Shops at Chase Press Release}
+\ip{criteria/original/evidence/Announcing The Shops at Chase – A New Way for Chase Cardmembers to Shop and Save.pdf}
+
+\ex{LOR-6}{Letter of Recommendation from Dr. Maxim A. Dulebenets}
+\ip{LOR/FinalLetters/Maxim_LoR.pdf}
+
+\ex{LOR-7}{Letter of Recommendation from Sinchan Banerjee}
+\ip{LOR/FinalLetters/Vivivek_LoR_frm_Sinchan.pdf}
+
+\ex{OR-6}{Speaker Recognition Photo - Faculty Development Programme}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{criteria/original/evidence/Er Vivek.jpg}
+\end{center}
+\newpage
+
+\ex{OR-7}{JPMorgan Chase Production System Metrics (Splunk Dashboard)}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/original/evidence/chaseWork.png}
+\end{center}
+\newpage
+
+\ex{OR-8}{The Shops at Chase Launch Day Team Photo}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/original/evidence/Shop_At_Chase.png}
+\end{center}
+\newpage
+
+\ex{RV-1}{Letter of Recommendation from Rahul Vishwakarma, Research Engineer at WorkOnward}
+\ip{LOR/FinalLetters/Rahul_Vishwakarma.pdf}
+
+\ex{OR-9}{Curriculum Adoption Email from Supaul College of Engineering}
+\ip{criteria/original/evidence/Sunil_Supaul_Engineering_College.pdf}
+
+\ex{OR-1.B}{Research Assistant Appointment Letter from California State University, Long Beach}
+\begin{center}
+\includegraphics[width=0.85\textwidth]{criteria/critical/evidence/RA_OFFER_Letter.jpg}
+\end{center}
+\newpage
+
+%% ========================================
+%% EXHIBITS FOR JUDGING CRITERIA
+%% ========================================
+
+%% OpenReview Evidence: ICLR 2025 FM-Wild Workshop
+\ex{JR-1}{ICLR 2025 FM-Wild Workshop Reviewer Invitation}
+\ip{criteria/judge/evidence/OpenReview/ICLR_2025_FM-Wild_Reviewer_Invitation.pdf}
+
+\ex{JR-2}{ICLR 2025 FM-Wild Official Review Posted Confirmation}
+\ip{criteria/judge/evidence/OpenReview/ICLR_2025_FM-Wild_Paper62_Review_Posted.pdf}
+
+\ex{JR-3}{ICLR 2025 FM-Wild Review Received Confirmation}
+\ip{criteria/judge/evidence/OpenReview/ICLR_2025_FM-Wild_Paper62_Review_Received.pdf}
+
+%% OpenReview Evidence: NeurIPS 2025
+\ex{JR-4}{NeurIPS 2025 Position Paper Track Reviewer Invitation}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_2025_Position_Paper_Reviewer_Invitation.pdf}
+
+\ex{JR-5}{NeurIPS 2025 Paper Assignment Screenshot}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/OpenReview/NeurIPS_paper_to_review.png}
+\newpage
+
+%% MicrosoftCMT Evidence: GSP 2025
+\ex{JR-6}{Graph Signal Processing Workshop 2025 Reviewer Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - Reviewer Invitation for Graph Signal Processing Workshop 2025.pdf}
+
+\ex{JR-7}{GSP 2025 Paper 17 Assignment}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - GSP2025 _ Paper 17.pdf}
+
+%% MicrosoftCMT Evidence: ACDSA 2026
+\ex{JR-8}{ACDSA 2026 Reviewer Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/ACDSA2026_Reviewer_Invitation.pdf}
+
+\ex{JR-9}{ACDSA 2026 Paper 1105 Review}
+\ip{criteria/judge/evidence/MicrosoftCMT/Gmail - ACDSA2026 _ Paper 1105.pdf}
+
+%% MicrosoftCMT Evidence: Bengali Sentiment Analysis
+\ex{JR-10}{Bengali Sentiment Analysis Review Invitation}
+\ip{criteria/judge/evidence/MicrosoftCMT/Bengali Sentiment Analysis_invitation_.pdf}
+
+%% IEEE Review Panel Evidence
+\ex{JR-11}{IEEE Senior Member Application Virtual Review Panel Invitation (June 2025)}
+\ip{criteria/judge/evidence/IEEE Review/Invitation to the Senior Member Application Virtual Review Panel - June 2025.pdf}
+
+\ex{JR-12}{IEEE Senior Member Panel Completion (June 29, 2025)}
+\ip{criteria/judge/evidence/IEEE Review/COMPLETE - 29-Jun-2025 Senior Member Panel.pdf}
+
+\ex{JR-13}{IEEE Senior Member Panelist Thank You Letter}
+\ip{criteria/judge/evidence/IEEE Review/Thank you letter template-SM Panelist_100495418.pdf}
+
+%% Hackathon Evidence: Journal Reviews
+\ex{JR-14}{Virtus InterPress - Risk Governance and Control Journal Review}
+\ip{criteria/judge/evidence/hackathon/Virtus_1review_Risk Governance and Control_ Financial Markets & Institution.pdf}
+
+\ex{JR-15}{Virtus InterPress - Corporate \& Business Strategy Review}
+\ip{criteria/judge/evidence/hackathon/Virtus_2_Regarding review_Corporate & Business Strategy Review.pdf}
+
+\ex{JR-16}{Informatica Journal Article Review Request}
+\ip{criteria/judge/evidence/hackathon/Informatica_Article Review Request.pdf}
+
+%% Hackathon Evidence: Competition Judging
+\ex{JR-17}{PennApps Judge Certification Letter (University of Pennsylvania)}
+\ip{criteria/judge/evidence/hackathon/Judge Certification Letter - Vivek (2).pdf}
+
+\ex{JR-18}{DragonHacks 2024 Judge Documentation}
+\ip{criteria/judge/evidence/hackathon/DrgonHacks.pdf}
+
+\ex{JR-19}{Claro Judge 2024 Certification Letter}
+\ip{criteria/judge/evidence/hackathon/VivekMishra_ClaroJudge24.pdf}
+
+\ex{JR-20}{Acknowledgement Letter}
+\ip{criteria/judge/evidence/hackathon/acknowledgement letter.pdf}
+
+%% Screenshot - Informatica Journal Reviewer Dashboard
+\ex{JR-21}{Informatica Journal Active Reviewer Dashboard}
+\includegraphics[width=\textwidth]{criteria/judge/evidence/hackathon/informatica_judging.png}
+\newpage
+
+%% NeurIPS 2025 Position Paper Reviews - OpenReview Evidence
+\ex{JR-24}{NeurIPS 2025 Paper 110 - AI-Driven Automation Research (OpenReview Page)}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_Paper110_OpenReview_Page.pdf}
+
+\ex{JR-25}{NeurIPS 2025 Paper 110 - Official Review Posted Confirmation}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_2025_Paper110_Review_Posted.pdf}
+
+\ex{JR-26}{NeurIPS 2025 Paper 156 - Modern Power Systems AI (OpenReview Page)}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_Paper156_OpenReview_Page.pdf}
+
+\ex{JR-27}{NeurIPS 2025 Paper 156 - Official Review Posted Confirmation}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_2025_Paper156_Review_Posted.pdf}
+
+\ex{JR-28}{NeurIPS 2025 Paper 598 - Net Climate Impact of AI (OpenReview Page)}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_Paper598_OpenReview_Page.pdf}
+
+\ex{JR-29}{NeurIPS 2025 Paper 598 - Official Review Posted Confirmation}
+\ip{criteria/judge/evidence/OpenReview/NeurIPS_2025_Paper598_Review_Posted.pdf}
+
+%% ========================================
+%% EXHIBITS FOR SCHOLARLY ARTICLES CRITERIA
+%% ========================================
+
+\ex{SR-1}{Integrating Solar Photovoltaic Systems into the Grid: An Overview of AI Applications}
+\ip{criteria/scholar/evidence/Integrating-Solar-Photovoltaic-Systems-into-the-Grid-An-Overview-of-AI-Application.pdf}
+
+\ex{SR-2}{The Role of Generative AI}
+\ip{criteria/scholar/evidence/The Role of Generative AI.pdf}
+
+\ex{SR-3}{MDPI Sustainability Journal Publication}
+\ip{criteria/scholar/evidence/sustainability-16-08077.pdf}
+
+\ex{SR-4}{Connectivity Evaluations}
+\ip{criteria/scholar/evidence/Connectivity evaluations.pdf}
+
+\ex{SR-5}{Evaluating Financing Mechanisms and Economic Benefits}
+\ip{criteria/scholar/evidence/Evaluating Financing Mechanisms and Economic Benefits to Fund Gra.pdf}
+
+\ex{SR-6}{Evaluating Innovative Financing}
+\ip{criteria/scholar/evidence/Evaluating Innovative Financing.pdf}
+
+\ex{SR-7}{Funding High Speed Infrastructure}
+\ip{criteria/scholar/evidence/FundingHighSpeed.pdf}
+
+\ex{SR-8}{Optimizing Multimodal Transportation Access to Support Commuting}
+\ip{criteria/scholar/evidence/Optimizing Multimodal Transportation Access to Support Commuting.pdf}
+
+\ex{SR-9}{Citation Profile and Publication Metrics}
+% Screenshot renamed - see note below
+\begin{center}
+\textbf{[Citation Profile - Rename screenshot to citation\_profile.png]}
+\end{center}
+\newpage
+
+%% ========================================
+%% EXHIBITS FOR CRITICAL ROLE CRITERIA
+%% ========================================
+
+\ex{CR-1}{JPMorgan Chase Press Release - The Shops at Chase Launch}
+\ip{criteria/critical/evidence/Announcing The Shops at Chase – A New Way for Chase Cardmembers to Shop and Save.pdf}
+
+\ex{CR-2}{Letter of Recommendation from Corey Graham, Director of Software Engineering}
+\newpage
+
+\ex{CR-3}{Chase Shopping Services Production Metrics (Splunk Dashboard)}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/critical/evidence/chaseWork.png}
+\end{center}
+\newpage
+
+\ex{CR-4}{VP-Level Appreciation for Chase Shopping Hub Contributions}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/critical/evidence/JPMC_VP_Appreciations.png}
+\end{center}
+\newpage
+
+\ex{CR-5}{Leadership Appreciation from Tracy Champion, Senior Architect at JPMorgan Chase}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/critical/evidence/TracyJPMorgan.png}
+\end{center}
+\newpage
+
+\ex{CR-6}{Appreciation from Kalyan Vemaraju, Manager at JPMorgan Chase}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/critical/evidence/kalyanAppreciationJPMCHASE.png}
+\end{center}
+\newpage
+
+\ex{CR-7}{Code Coverage and System Metrics}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/critical/evidence/coverage.png}
+\end{center}
+\newpage
+
+
+
+\ex{CR-9}{AWS Certified Cloud Practitioner Certificate}
+\ip{criteria/critical/evidence/AWS Certified Cloud Practitioner certificate.pdf}
+
+\ex{CR-10}{Letter of Recommendation from Sumit Bhatnagar, Vice President of Engineering}
+\ip{LOR/FinalLetters/lorSumit.pdf}
+\newpage
+
+\ex{CR-11}{Employment Verification Letter from JPMorgan Chase}
+\ip{criteria/critical/evidence/getLetter.pdf}
+
+\ex{CR-12}{Official Job Offer Letter for Senior Software Engineer Position}
+\ip{criteria/critical/evidence/JobOfferLetter_ACCEPTED_SoftwareEngineer_210921_192618.pdf}
+
+\ex{CR-13}{Research Assistant Offer Letter from California State University, Long Beach}
+\begin{center}
+\includegraphics[width=0.8\textwidth]{criteria/critical/evidence/RA_OFFER_Letter.jpg}
+\end{center}
+\newpage
+
+%% ========================================
+%% EXHIBITS FOR MEMBERSHIP CRITERIA
+%% ========================================
+
+\ex{M-1}{IEEE History and Organization Information}
+\ip{criteria/member/evidence/IEEE/IEEE History | IEEE.pdf}
+
+\ex{M-2}{IEEE Bylaw I-104.3 - Senior Member Grade Requirements}
+\ip{criteria/member/evidence/IEEE/Bylaw_IEEE_Senior Member_GradeIEEE.pdf}
+
+\ex{M-3}{IEEE Senior Member Elevation Notification}
+\ip{criteria/member/evidence/IEEE/Gmail - IEEE senior member results [Reference #_ 241128-000463].pdf}
+
+\ex{M-4}{IEEE Senior Member Reference Letters and Vouchers}
+\ip{criteria/member/evidence/IEEE/2024 President's Letter and Vouchers_.pdf}
+
+\ex{M-5}{IEEE Senior Member Certificate and Membership Card}
+\ip{criteria/member/evidence/IEEE/MEMIEEE500.pdf}
+
+\ex{M-6}{IEEE Young Professionals and Technical Society Membership}
+\ip{criteria/member/evidence/IEEE/MEMYP060.pdf}
+
+\ex{M-7}{News Article on IEEE Senior Member Elevation Significance}
+\ip{criteria/member/evidence/IEEE/Walth named IEEE senior member.pdf}
+
+
+%% ========================================
+%% EXHIBITS FOR PUBLISHED MATERIAL CRITERIA
+%% ========================================
+
+%% Note: The following exhibits require PDF printouts of online articles.
+%% For images (PNG/JPEG), we use includegraphics with scaling.
+%% Evidence files are located in criteria/media/evidence/
+
+\ex{PM-1}{TechBullion Exclusive Interview with Vivek Mishra}
+% PDF printout of TechBullion interview required
+\begin{center}
+\textbf{[TechBullion Interview - Print PDF from URL]}\\
+\end{center}
+\ip{criteria/media/evidence/TechBullion_Interview.pdf}
+
+\ex{PM-2}{IEEE Transmitter Impact Creators Profile}
+\ip{criteria/media/evidence/IEEE_Transmitter_Profile.pdf}
+
+\ex{PM-3}{IEEE.tv Speaker Profile Page}
+\ip{criteria/media/evidence/IEEE_TV_Profile.pdf}
+
+\ex{PM-4}{IEEE Official Twitter/X Features}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{criteria/media/evidence/IeeeTwitter.png}
+\vspace{1em}
+\includegraphics[width=0.9\textwidth]{criteria/media/evidence/IeeeTwitter1.png}
+\end{center}
+\newpage
+
+\ex{PM-5}{Dainik Bhaskar Newspaper Article (Original Hindi)}
+\begin{center}
+\includegraphics[width=0.95\textwidth]{criteria/media/evidence/Dainik_Bhaskar.png}
+\end{center}
+\newpage
+
+
+\ex{PM-6}{Dainik Bhaskar Article - Certified English Translation}
+\ip{criteria/media/evidence/DainikBhaskar_Translation.pdf}
+
+\ex{PM-7}{Rajasthan Patrika Article - Certified English Translation}
+\ip{criteria/media/evidence/RajasthanPatrika_Translation.pdf}
+
+
+\ex{PM-8}{Feature Coverage in First India Newspaper}
+\ip{criteria/media/evidence/FirstIndia.pdf}
+
+\ex{PM-9}{TechTarget Article: The Future of Generative AI (10 Trends)}
+\ip{criteria/media/evidence/TechTarget_Trends_2025.pdf}
+
+\ex{PM-10}{TechTarget Article: Generative AI's Sustainability Problems}
+\ip{criteria/media/evidence/TechTarget_Sustainability.pdf}
+
+\ex{PM-11}{Dice.com Feature: Database Administrators and AI}
+\begin{center}
+\includegraphics[width=\textwidth]{criteria/media/evidence/Dice_Article.png}
+\end{center}
+\newpage
+
+\ex{PM-12}{VKTR.com Article: Do AI Coding Tools Really Increase Productivity?}
+\ip{criteria/media/evidence/VKTR_AI_Productivity.pdf}
+\newpage
+
+
+
+
+\end{document}
