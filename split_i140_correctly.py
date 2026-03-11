@@ -67,7 +67,7 @@ def split_pdf_correctly():
     print("\nMembership criterion NOW INCLUDED ✓")
     print("="*70)
     
-    # CORRECT page ranges for 583-page PDF (boundaries fixed: JR=143, SR=219)
+    # CORRECT page ranges for 611-page PDF (boundaries fixed: JR=143, SR=219)
     packages = [
         {
             "filename": "01_Cover_and_Narratives.pdf",
@@ -76,39 +76,39 @@ def split_pdf_correctly():
             "end": 61,
         },
         {
-            "filename": "02_Original_Contributions.pdf",
-            "desc": "Original Contributions Evidence (Exhibits OR-1 through OR-9, OR-1.B, LOR-6, LOR-7)",
+            "filename": "02_Original_Contributions_and_LOR_Evidence.pdf",
+            "desc": "Original Contributions & LOR Evidence (Exhibits OR-1 through OR-9, OR-1.B, LOR-6, LOR-7, RV-1)",
             "start": 62,   # Pages 63-142 (fixed: now includes OR-1.B)
             "end": 141,
         },
         {
-            "filename": "03_Judging.pdf",
+            "filename": "03_Judging_Evidence.pdf",
             "desc": "Judging Evidence (Exhibits JR-1 through JR-29)",
             "start": 142,  # Pages 143-218 (FIXED: was 141, now 143 where JR-1 actually is)
             "end": 217,
         },
         {
             "filename": "04_Scholarly_Articles.pdf",
-            "desc": "Scholarly Articles Evidence (Exhibits SR-1 through SR-9)",
+            "desc": "Scholarly Articles Evidence (Exhibits SR-1 through SR-10)",
             "start": 218,  # Pages 219-468 (FIXED: was 218, now 219 where SR-1 actually is)
             "end": 467,
         },
         {
-            "filename": "05_Critical_Role.pdf",
+            "filename": "05_Critical_Role_Evidence.pdf",
             "desc": "Critical Role Evidence (Exhibits CR-1 through CR-13)",
             "start": 468,  # Pages 469-501 (+3 pages for Sumit LOR)
             "end": 500,
         },
         {
-            "filename": "06_Membership.pdf",
-            "desc": "Membership Evidence (Exhibits M-1 through M-7 - IEEE Senior Member)",
+            "filename": "06_Membership_Evidence.pdf",
+            "desc": "Membership Evidence (Exhibits M-1 through M-6 - IEEE Senior Member)",
             "start": 501,  # Pages 502-519 (+3 shift)
             "end": 518,
         },
         {
-            "filename": "07_Published_Material.pdf",
-            "desc": "Published Material Evidence (Exhibits PM-1 through PM-12)",
-            "start": 519,  # Pages 520-583 (+3 shift)
+            "filename": "07_Published_Material_Evidence.pdf",
+            "desc": "Published Material Evidence (Exhibits PM-1 through PM-13)",
+            "start": 519,  # Pages 520-611 (+3 shift)
             "end": total_pages - 1,
         },
     ]
@@ -125,11 +125,11 @@ def split_pdf_correctly():
         num_pages = end - start + 1
         
         # Check if this will be large (>200 pages) and needs splitting
-        if num_pages > 200:
-            print(f"📦 {filename} ({num_pages} pages - will split into 2 parts)")
-            
-            # Split Scholarly Articles into 2 parts
-            pages_per_part = num_pages // 2
+        if num_pages > 100:
+            import math
+            num_parts = math.ceil(num_pages / 100)
+            pages_per_part = math.ceil(num_pages / num_parts)
+            print(f"📦 {filename} ({num_pages} pages - will split into {num_parts} parts)")
             
             part_num = 1
             current_start = start
