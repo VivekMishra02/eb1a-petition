@@ -1,6 +1,35 @@
-# EB-1A Petition Template
+# Ignore everything by default
+*
 
-## LaTeX Files
+# Allow directory traversal (required for git to find whitelisted files in subdirectories)
+!*/
+
+# Keep repository configuration and standard documentation
+!.gitignore
+!.gitattributes
+!README.md
+
+# Keep the main petition LaTeX document and the generated main.pdf
+!main.tex
+!main.pdf
+
+# Keep cover page LaTeX files
+!cover/
+!cover/**
+
+# Keep only the final recommendation letters (excluding drafts/Word docs)
+!LOR/
+!LOR/FinalLetters/
+!LOR/FinalLetters/**
+
+# Keep the entire criteria folder (including all criteria descriptions and evidence files)
+!criteria/
+!criteria/**
+
+# ==========================================
+# LaTeX build/intermediate files to ignore
+# (applies globally across all allowed directories)
+# ==========================================
 *.aux
 *.fdb_latexmk
 *.fls
@@ -13,11 +42,16 @@
 *.nav
 *.snm
 *.vrb
+*.bak
+*.bak_*
+*.backup
+*.backup_*
+*~
+missfont.log
 
-# Keep the main PDF but ignore intermediate builds
-# main.pdf
-
-# OS Files
+# ==========================================
+# OS and IDE configuration files to ignore
+# ==========================================
 .DS_Store
 .DS_Store?
 ._*
@@ -25,12 +59,5 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# IDE
 .vscode/
 .idea/
-
-# Backup files
-*.bak
-*~
-main.pdf
