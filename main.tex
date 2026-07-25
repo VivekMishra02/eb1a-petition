@@ -3,7 +3,6 @@
 
 \usepackage[margin=2.1cm]{geometry}
 \setlength{\headheight}{14pt}
-\usepackage[utf8]{inputenc}
 % \usepackage{dirtytalk} % Replaced with custom definition below
 \newcommand{\say}[1]{``#1''}
 \usepackage{titling} % multiple title pages
@@ -29,8 +28,8 @@
 
 \makeatletter
 \renewcommand\@bibitem[1]{\item\hypertarget{cite.#1}{}\if@filesw \immediate\write\@auxout
-    {\string\bibcite{#1}{Exhibit \the\value{\@listctr}}}\fi\ignorespaces}% <------------
-\def\@biblabel#1{Exhibit #1:}% <-------------------
+    {\string\bibcite{#1}{Exhibit \the\value{\@listctr}}}\fi\ignorespaces}% <===
+\def\@biblabel#1{Exhibit #1:}% <===
 \makeatother
 
 
@@ -41,7 +40,6 @@
 \usepackage{setspace}\setstretch{1.167} % prerequisite of geometry
 % \usepackage[textwidth=17.0cm, lines=42, hcentering]{geometry}
 % \usepackage[colorlinks]{hyperref}
-\usepackage[utf8]{inputenc}
 \usepackage{tfrupee} % Support for Indian Rupee symbol
 \usepackage[british, cleanlook]{isodate}
 \usepackage[pagewise, modulo, displaymath, mathlines]{lineno}
@@ -51,7 +49,6 @@
 % \usepackage[bib, enum, eqno, lineno, toc]{tabfigures}
 
 \usepackage{fancyhdr}
-\usepackage{soul}
 \usepackage{tikz}
 \setlength\parindent{0pt}
 \newcommand{\mybullet}{\,\textbullet\,}
@@ -181,7 +178,7 @@
 
 \bibitem{OR10}
 \textbf{Exhibit OR-10}: Curriculum Adoption Email from Head of Department, CSE, Lakshmi Narain College of Technology \& Science (LNCTS), Bhopal.
-\\Official email from Dr. Bhupesh Gour (hodcslncts@lnct.ac.in), Professor \& Head of the Department of Computer Science and Engineering at LNCTS---an AICTE-approved, NBA-accredited institution ranked in the NIRF 2025 Engineering 201--300 band---confirming integration of \drs book ``Design Patterns for AI Agents: A Structured Approach to Building Robust and Intelligent Systems'' (ISBN: 979-8268912371) into the 4th-year CSE curriculum. This represents the third independent institutional adoption of \drs book by an AICTE-regulated engineering institution.
+\\Official email from Dr. Bhupesh Gour (hodcslncts@lnct.ac.in), Professor \& Head of the Department of Computer Science and Engineering at LNCTS, an AICTE-approved, NBA-accredited institution ranked in the NIRF 2025 Engineering 201--300 band, confirming integration of \drs book ``Design Patterns for AI Agents: A Structured Approach to Building Robust and Intelligent Systems'' (ISBN: 979-8268912371) into the 4th-year CSE curriculum. This represents the third independent institutional adoption of \drs book by an AICTE-regulated engineering institution.
 
 \bibitem{OR1B}
 \textbf{Exhibit OR-1.B}: Research Assistant Appointment Letter from California State University, Long Beach.
@@ -322,7 +319,7 @@
 %% OpenReview Evidence: ICML 2026 AIWILD Workshop
 \bibitem{JR33}
 \textbf{Exhibit JR-33}: ICML 2026 AIWILD Paper 310 - ``Full-Season Agent Evaluation in Soybean Farm Operations under Real-World Agricultural Process Dynamics'' (OpenReview Page).
-\\Full OpenReview submission page for ICML 2026 Workshop AIWILD Paper 310, showing the paper under review (submitted May 9, 2026). The paper evaluates nine AI agent-controller methodologies on a physics-grounded soybean farm digital twin across three operational levels---atomic tasks, episode chains, and full-season scenarios. ICML (International Conference on Machine Learning) is the world's oldest and one of its most prestigious ML conferences (CORE A*, founded 1980, 24,371 submissions in 2026).
+\\Full OpenReview submission page for ICML 2026 Workshop AIWILD Paper 310, showing the paper under review (submitted May 9, 2026). The paper evaluates nine AI agent-controller methodologies on a physics-grounded soybean farm digital twin across three operational levels (atomic tasks, episode chains, and full-season scenarios). ICML (International Conference on Machine Learning) is the world's oldest and one of its most prestigious ML conferences (CORE A*, founded 1980, 24,371 submissions in 2026).
 
 \bibitem{JR34}
 \textbf{Exhibit JR-34}: ICML 2026 AIWILD Paper 310 - Official Review Posted (OpenReview).
@@ -345,40 +342,40 @@
 \\Email notification from ICML 2026 AIWILD (icml2026aiwild-notifications@openreview.net) dated May 13, 2026 confirming that \drs review was received for Paper 326 at ICML 2026 Workshop AIWILD.
 
 \bibitem{JR39}
-\textbf{Exhibit JR-39}: ICML 2026 AIWILD Workshop --- Official Reviewer Confirmation for Vivek Mishra.
+\textbf{Exhibit JR-39}: ICML 2026 AIWILD Workshop: Official Reviewer Confirmation for Vivek Mishra.
 \\Official reviewer confirmation document from the ICML 2026 ``Agents in the Wild'' (AIWILD) Workshop, formally confirming \drs role as an appointed reviewer for the workshop. This document, issued through the OpenReview platform, establishes \drs official reviewer status for the ICML 2026 AIWILD Workshop, corroborating the review completion confirmations (Exhibits JR-35 and JR-38) with a formal reviewer appointment record.
 
 %% NeurIPS 2026 Main Conference Reviews
 \bibitem{JR40}
-\textbf{Exhibit JR-40}: NeurIPS 2026 Paper 1773 --- ``Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality'' (OpenReview Page).
+\textbf{Exhibit JR-40}: NeurIPS 2026 Paper 1773: ``Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality'' (OpenReview Page).
 \\Full OpenReview submission page for NeurIPS 2026 Conference Paper 1773. The paper introduces OmniAir, a semantic topology learning framework for global station-level air quality prediction covering 7,800+ stations worldwide, achieving 10$\times$ speedup over existing models. Submitted to the main NeurIPS 2026 conference (Primary Area: AI/ML for physical sciences). \drs official review appears on this page as Reviewer yFPm (Vivek Kumar Mishra), evaluating the first global-scale inductive air quality forecasting system.
 
 \bibitem{JR41}
-\textbf{Exhibit JR-41}: NeurIPS 2026 Paper 1773 --- Official Review Received Confirmation Email.
+\textbf{Exhibit JR-41}: NeurIPS 2026 Paper 1773: Official Review Received Confirmation Email.
 \\Email notification from NeurIPS 2026 (neurips2026-notifications@openreview.net) dated June 9, 2026 confirming that \drs official review was received for Paper 1773 (``Breaking the Regional Barrier: Inductive Semantic Topology Learning for Worldwide Air Quality'') at the NeurIPS 2026 main conference.
 
 \bibitem{JR42}
-\textbf{Exhibit JR-42}: NeurIPS 2026 Paper 5499 --- ``Physics-Supervised Inversion of Indoor Electromagnetic Materials from Multi-View Images and Channel Measurements'' (OpenReview Page).
+\textbf{Exhibit JR-42}: NeurIPS 2026 Paper 5499: ``Physics-Supervised Inversion of Indoor Electromagnetic Materials from Multi-View Images and Channel Measurements'' (OpenReview Page).
 \\Full OpenReview submission page for NeurIPS 2026 Conference Paper 5499. The paper introduces PRISM, a framework for dense, non-invasive physical inversion of indoor electromagnetic material parameters designed to build functional digital twins using physics-supervised learning and a differentiable Fresnel reflection layer. Submitted to the main NeurIPS 2026 conference (Primary Area: AI/ML for physical sciences). \drs official review was submitted and received for this submission.
 
 \bibitem{JR43}
-\textbf{Exhibit JR-43}: NeurIPS 2026 Paper 5499 --- Official Review Received Confirmation Email.
+\textbf{Exhibit JR-43}: NeurIPS 2026 Paper 5499: Official Review Received Confirmation Email.
 \\Email notification from NeurIPS 2026 (neurips2026-notifications@openreview.net) dated June 7, 2026 confirming that \drs official review was received for Paper 5499 (``Physics-Supervised Inversion of Indoor Electromagnetic Materials from Multi-View Images and Channel Measurements'') at the NeurIPS 2026 main conference.
 
 \bibitem{JR44}
-\textbf{Exhibit JR-44}: NeurIPS 2026 Paper 19582 --- ``Neural Dependency Region: Improving Generalization through Re-training Using Dependency Region Extraction via Sensitivity Analysis of Neural Operators'' (OpenReview Page).
+\textbf{Exhibit JR-44}: NeurIPS 2026 Paper 19582: ``Neural Dependency Region: Improving Generalization through Re-training Using Dependency Region Extraction via Sensitivity Analysis of Neural Operators'' (OpenReview Page).
 \\Full OpenReview submission page for NeurIPS 2026 Conference Paper 19582. The paper proposes a machine learning method to extract the domain of dependence from trained neural operators for solving partial differential equations, demonstrating improved test error through targeted sensor placement and retraining. Submitted to the main NeurIPS 2026 conference (Primary Area: AI/ML for physical sciences; Secondary Area: General machine learning). \drs official review was submitted for this paper.
 
 \bibitem{JR45}
-\textbf{Exhibit JR-45}: NeurIPS 2026 Paper 19582 --- Official Review Received Confirmation Email.
+\textbf{Exhibit JR-45}: NeurIPS 2026 Paper 19582: Official Review Received Confirmation Email.
 \\Email notification from NeurIPS 2026 (neurips2026-notifications@openreview.net) dated June 9, 2026 confirming that \drs official review was received for Paper 19582 (``Neural Dependency Region: Improving Generalization through Re-training Using Dependency Region Extraction via Sensitivity Analysis of Neural Operators'') at the NeurIPS 2026 main conference.
 
 \bibitem{JR46}
-\textbf{Exhibit JR-46}: NeurIPS 2026 Paper 29968 --- ``VEST-RL: Learning Bonus and Equity Fields for Efficient Multi-Agent Systems'' (OpenReview Page).
-\\Full OpenReview submission page for NeurIPS 2026 Conference Paper 29968. The paper introduces VEST-RL, a bilevel reinforcement learning framework that learns graph-structured, budget-aware, and fairness-aware incentive fields for multi-agent coordination. The paper's primary area is Decision Making, Reinforcement Learning, and Control (including agentic AI)---directly aligned with \drs expertise in multi-agent AI systems. \drs official review was submitted for this submission.
+\textbf{Exhibit JR-46}: NeurIPS 2026 Paper 29968: ``VEST-RL: Learning Bonus and Equity Fields for Efficient Multi-Agent Systems'' (OpenReview Page).
+\\Full OpenReview submission page for NeurIPS 2026 Conference Paper 29968. The paper introduces VEST-RL, a bilevel reinforcement learning framework that learns graph-structured, budget-aware, and fairness-aware incentive fields for multi-agent coordination. The paper's primary area is Decision Making, Reinforcement Learning, and Control (including agentic AI), directly aligned with \drs expertise in multi-agent AI systems. \drs official review was submitted for this submission.
 
 \bibitem{JR47}
-\textbf{Exhibit JR-47}: NeurIPS 2026 Paper 29968 --- Official Review Received Confirmation Email.
+\textbf{Exhibit JR-47}: NeurIPS 2026 Paper 29968: Official Review Received Confirmation Email.
 \\Email notification from NeurIPS 2026 (neurips2026-notifications@openreview.net) dated June 7, 2026 confirming that \drs official review was received for Paper 29968 (``VEST-RL: Learning Bonus and Equity Fields for Efficient Multi-Agent Systems'') at the NeurIPS 2026 main conference.
 
 \subsection*{Evidence of Authorship of Scholarly Articles}
@@ -417,18 +414,18 @@
 
 \bibitem{SR9}
 \textbf{Exhibit SR-9}: Google Scholar Citation Profile and Publication Metrics.
-\\Screenshot documenting \drs 38 total citations (since 2021), h-index of 4, i10-index of 2, and publication record on Google Scholar---verified IEEE senior member profile (verified email at ieee.org).
+\\Screenshot documenting \drs 38 total citations (since 2021), h-index of 4, i10-index of 2, and publication record on Google Scholar, showing a verified IEEE senior member profile (verified email at ieee.org).
 
 \bibitem{SR10}
 \textbf{Exhibit SR-10}: AI-Driven Optimization of Backend and Cloud Infrastructure in Large-Scale Financial Systems.
 \\Peer-reviewed scholarly article on AI-driven cloud infrastructure optimization for financial services, published in IJARSCT (Impact Factor: 8.2), Volume 6, Issue 2, February 2026 (DOI: 10.48175/IJARSCT-31286).
 
 \bibitem{SR11}
-\textbf{Exhibit SR-11}: Google Scholar Profile --- Vivek Mishra (Screenshot, May 2026).
+\textbf{Exhibit SR-11}: Google Scholar Profile: Vivek Mishra (Screenshot, May 2026).
 \\Independently verifiable Google Scholar profile showing 38 total citations (all since 2021), h-index of 4, and i10-index of 2. Profile is verified through \drs IEEE institutional email (ieee.org). The citation chart shows an accelerating trend with a peak of 22 citations in 2025. Top cited papers include: ``Framework for rail transport inequality assessment'' (13 citations), ``Evaluating financing mechanisms and economic benefits to fund grade separation projects'' (11 citations), and ``Evaluating innovative financing mechanisms for the California high-speed rail project'' (7 citations).
 
 \bibitem{SR12}
-\textbf{Exhibit SR-12}: ResearchGate Profile --- Vivek Mishra (Screenshot, May 2026).
+\textbf{Exhibit SR-12}: ResearchGate Profile: Vivek Mishra (Screenshot, May 2026).
 \\ResearchGate profile (researchgate.net/profile/Vivek\_Mishra40) showing 23 citations, h-index of 3, and a Research Interest Score of 35.5. Verified through six co-authors including Dr. Shailesh Chandra (CSULB). ResearchGate is the world's largest professional network for scientists and researchers (25 million members), independently tracking citations from institutional repositories and publications not captured by Google Scholar.
 
 \subsection*{Evidence of Membership in Associations Requiring Outstanding Achievements}
@@ -461,7 +458,7 @@
 \textbf{Exhibit M-7}: Third-party news coverage demonstrating the prestige and significance of IEEE Senior Member elevation in the technical community.
 
 \bibitem{bcsfellowportal}
-\textbf{Exhibit FBCS-1}: MyBCS Portal Screenshot --- Fellow Member Grade Confirmation.
+\textbf{Exhibit FBCS-1}: MyBCS Portal Screenshot: Fellow Member Grade Confirmation.
 \\Screenshot of the official MyBCS portal showing \drs Fellow member (FBCS) grade, membership number 995152699, BCS member since 2025, membership expiry 21/05/2027, and registration on the public register of members.
 
 \bibitem{bcsfellowguidance}
@@ -473,7 +470,7 @@
 \\Documentation evidencing the Royal Charter granted to BCS by the United Kingdom Privy Council, conferring exclusive authority to grant Chartered status to IT professionals in the United Kingdom.
 
 \bibitem{bcsannualreport}
-\textbf{Exhibit FBCS-4}: BCS Annual Report 2024 --- Government Recognition.
+\textbf{Exhibit FBCS-4}: BCS Annual Report 2024: Government Recognition.
 \\BCS Annual Report documenting government recognition of BCS Fellows, including appointments as Chief Scientific Advisors to UK government departments (Professor Tom Crick, Professor Chris Johnson).
 
 \subsection*{Evidence of Performance in a Leading or Critical Role}
@@ -525,6 +522,14 @@
 \bibitem{CR13}
 \textbf{Exhibit CR-13}: Research Assistant Offer Letter from California State University, Long Beach.
 \\Official offer letter from Dr. Shailesh Chandra, Assistant Professor in the Department of Civil Engineering and Construction Engineering Management at CSULB, documenting research assistantship position (February 2020).
+
+\bibitem{CR14}
+\textbf{Exhibit CR-14}: Randstad Digital Offer Letter --- AWS Java Python Developer at The Vanguard Group.
+\\Official offer letter from Randstad Digital (dated July 22, 2026), signed by Colleen Bott (Principal Recruiter), confirming \drs engagement as AWS Java Python Developer assigned to The Vanguard Group in Malvern, PA. Position involves software design, development, testing, and implementation of cloud infrastructure in alignment with Vanguard's requirements. Compensation: \$56.00/hr, W2 contract, paid weekly. Start date: August 2026. Hybrid work model: onsite at Vanguard HQ (Tue/Wed/Thu), remote (Mon/Fri).
+
+\bibitem{CR15}
+\textbf{Exhibit CR-15}: Vanguard Offer Congratulations Email from Randstad Digital.
+\\Official email from Colleen Bott, Principal Recruiter at Randstad Digital (colleen.bott@randstaddigital.com), dated July 22, 2026, formally extending the offer for the AWS Java Python Software Developer position with Randstad Digital assigned to the Vanguard account, confirming that background check and fingerprinting via Cisive were initiated.
 
 \subsection*{Evidence of Published Material About the Alien}
 
@@ -802,32 +807,32 @@
 \ex{JR-38}{ICML 2026 AIWILD Paper 326 - Review Received Confirmation Email}
 \ip{criteria/judge/evidence/OpenReview/2026/ICML2026_AIWILD_Paper326_Review_Received_Confirmation.pdf}
 
-\ex{JR-39}{ICML 2026 AIWILD Workshop --- Official Reviewer Confirmation for Vivek Mishra}
+\ex{JR-39}{ICML 2026 AIWILD Workshop: Official Reviewer Confirmation for Vivek Mishra}
 \ip{criteria/judge/evidence/OpenReview/2026/AIWILD_2026_Reviewer_Confirmation_Vivek_Mishra.pdf}
 
 %% NeurIPS 2026 Main Conference Reviews
-\ex{JR-40}{NeurIPS 2026 Paper 1773 --- Breaking the Regional Barrier: Worldwide Air Quality (OpenReview Page)}
+\ex{JR-40}{NeurIPS 2026 Paper 1773: Breaking the Regional Barrier: Worldwide Air Quality (OpenReview Page)}
 \ip{criteria/judge/evidence/OpenReview/2026/Breaking_the_Regional_Barrier_Nuerips_2026.pdf}
 
-\ex{JR-41}{NeurIPS 2026 Paper 1773 --- Official Review Received Confirmation Email}
+\ex{JR-41}{NeurIPS 2026 Paper 1773: Official Review Received Confirmation Email}
 \ip{criteria/judge/evidence/OpenReview/2026/NeurIPS2026_Paper1773_Review_Received_Confirmation.pdf}
 
-\ex{JR-42}{NeurIPS 2026 Paper 5499 --- Physics-Supervised Inversion of Indoor EM Materials (OpenReview Page)}
+\ex{JR-42}{NeurIPS 2026 Paper 5499: Physics-Supervised Inversion of Indoor EM Materials (OpenReview Page)}
 \ip{criteria/judge/evidence/OpenReview/2026/Physics_Supervised_Inversion_Nuerips_2026.pdf}
 
-\ex{JR-43}{NeurIPS 2026 Paper 5499 --- Official Review Received Confirmation Email}
+\ex{JR-43}{NeurIPS 2026 Paper 5499: Official Review Received Confirmation Email}
 \ip{criteria/judge/evidence/OpenReview/2026/NeurIPS2026_Paper5499_Review_Received_Confirmation.pdf}
 
-\ex{JR-44}{NeurIPS 2026 Paper 19582 --- Neural Dependency Region: Improving Generalization via Sensitivity Analysis (OpenReview Page)}
+\ex{JR-44}{NeurIPS 2026 Paper 19582: Neural Dependency Region: Improving Generalization via Sensitivity Analysis (OpenReview Page)}
 \ip{criteria/judge/evidence/OpenReview/2026/Neural_dependency_region_NUERIPS_2026.pdf}
 
-\ex{JR-45}{NeurIPS 2026 Paper 19582 --- Official Review Received Confirmation Email}
+\ex{JR-45}{NeurIPS 2026 Paper 19582: Official Review Received Confirmation Email}
 \ip{criteria/judge/evidence/OpenReview/2026/NeurIPS2026_Paper19582_Review_Received_Confirmation.pdf}
 
-\ex{JR-46}{NeurIPS 2026 Paper 29968 --- VEST-RL: Learning Bonus and Equity Fields for Multi-Agent Systems (OpenReview Page)}
+\ex{JR-46}{NeurIPS 2026 Paper 29968: VEST-RL: Learning Bonus and Equity Fields for Multi-Agent Systems (OpenReview Page)}
 \ip{criteria/judge/evidence/OpenReview/2026/VEST-RL_ NUERIPS_2026.pdf}
 
-\ex{JR-47}{NeurIPS 2026 Paper 29968 --- Official Review Received Confirmation Email}
+\ex{JR-47}{NeurIPS 2026 Paper 29968: Official Review Received Confirmation Email}
 \ip{criteria/judge/evidence/OpenReview/2026/NeurIPS2026_Paper29968_Review_Received_Confirmation.pdf}
 
 %% ========================================
@@ -858,23 +863,22 @@
 \ex{SR-8}{Optimizing Multimodal Transportation Access to Support Commuting}
 \ip{criteria/scholar/evidence/Optimizing Multimodal Transportation Access to Support Commuting.pdf}
 
-\ex{SR-9}{Citation Profile and Publication Metrics}
-% Screenshot renamed - see note below
+\ex{SR-9}{Google Scholar Citation Profile and Publication Metrics}
 \begin{center}
-\textbf{[Citation Profile - Rename screenshot to citation\_profile.png]}
+\includegraphics[width=0.92\textwidth]{criteria/scholar/evidence/GoogleScholar.png}
 \end{center}
 \newpage
 
 \ex{SR-10}{AI-Driven Optimization of Backend and Cloud Infrastructure in Large-Scale Financial Systems}
 \ip{criteria/scholar/evidence/Paper31286.pdf}
 
-\ex{SR-11}{Google Scholar Profile --- 38 Citations, h-index 4 (Screenshot, May 2026)}
+\ex{SR-11}{Google Scholar Profile: 38 Citations, h-index 4 (Screenshot, May 2026)}
 \begin{center}
 \includegraphics[width=0.92\textwidth]{criteria/scholar/evidence/GoogleScholar.png}
 \end{center}
 \newpage
 
-\ex{SR-12}{ResearchGate Profile --- 23 Citations, Research Interest Score 35.5 (Screenshot, May 2026)}
+\ex{SR-12}{ResearchGate Profile: 23 Citations, Research Interest Score 35.5 (Screenshot, May 2026)}
 \begin{center}
 \includegraphics[width=0.92\textwidth]{criteria/scholar/evidence/Reaearchgate.png}
 \end{center}
@@ -941,6 +945,12 @@
 \end{center}
 \newpage
 
+\ex{CR-14}{Randstad Digital Offer Letter --- AWS Java Python Developer at The Vanguard Group}
+\ip{criteria/critical/Vanguard Randstad Digital Offer Letter Vivek Kumar Mishra.pdf}
+
+\ex{CR-15}{Vanguard Offer Congratulations Email from Randstad Digital (July 22, 2026)}
+\ip{criteria/critical/Gmail - Vanguard Offer - Congratukations.pdf}
+
 %% ========================================
 %% EXHIBITS FOR MEMBERSHIP CRITERIA
 %% ========================================
@@ -967,7 +977,7 @@
 % Add news coverage PDF here when available
 \newpage
 
-\ex{FBCS-1}{MyBCS Portal Screenshot --- Fellow Member Grade Confirmation}
+\ex{FBCS-1}{MyBCS Portal Screenshot: Fellow Member Grade Confirmation}
 \begin{center}
 \includegraphics[width=\textwidth]{criteria/member/evidence/BCS/BCS Home.png}
 \end{center}
@@ -979,7 +989,7 @@
 \ex{FBCS-3}{BCS Royal Charter Documentation}
 \ip{criteria/member/evidence/BCS/BCS_Royal_Charter.pdf}
 
-\ex{FBCS-4}{BCS Annual Report 2024 --- Government Recognition}
+\ex{FBCS-4}{BCS Annual Report 2024: Government Recognition}
 \ip{criteria/member/evidence/BCS/BCS_Annual_Report_2024.pdf}
 
 
@@ -992,10 +1002,6 @@
 %% Evidence files are located in criteria/media/evidence/
 
 \ex{PM-1}{TechBullion Exclusive Interview with Vivek Mishra}
-% PDF printout of TechBullion interview required
-\begin{center}
-\textbf{[TechBullion Interview - Print PDF from URL]}\\
-\end{center}
 \ip{criteria/media/evidence/TechBullion_Interview.pdf}
 
 \ex{PM-2}{IEEE Transmitter Impact Creators Profile}
