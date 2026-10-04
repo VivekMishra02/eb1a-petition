@@ -1,0 +1,67 @@
+Vivek Mishra
++1(562) 286 4529 | vivekmishraima@gmail.com | LinkedIn | GitHub
+
+SUMMARY
+Sr. Software Engineer with extensive experience designing scalable backend systems using Java and Python. Led development of  high-performance APIs that served 80 million users, improving performance by 40% and reducing costs by $100K. Demonstrated expertise in distributed systems, AWS, Kubernetes, and CI/CD pipelines, with hands-on work integrating AI dev-tools and LLMs. Proven ability to enhance productivity through robust system design and optimized service operations. 
+
+SKILLS
+	•	Backend Development: Java, Python, Spring, JavaScript, React
+	•	Data Pipelines: Jules, Spinnaker, Jenkins
+	•	Miscellaneous: AWS, Kubernetes, JMeter, Dynatrace, Grafana, Ansible, Go, Terraform, Shell Script, NumPy, Pandas, Kafka, LLMs, Windsurf, Spring security, Cursor, GenAI 
+	•	Frontend Development: ReactJS, JavaScript, HTML, CSS
+	•	Soft Skill: Team player, Bias for action, Deliver results
+	•	Interests: Traveling, Fitness, Nutrition
+
+EXPERIENCE
+JP Morgan & chase Oct 2021 - Present
+Software Developer Wilmington, DE
+	•	Directed a team of 3 developers to deploy six scalable APIs using Java, DynamoDB, and Kubernetes, supporting high availability for
+	•	million customers and aligning with distributed systems principles.
+	•	Engineered a cloud-based light switch solution that lowered operational costs by $100,000.
+	•	Optimized application performance, reducing response time by 40% through refined backend microservices and system design improvements. 
+	•	Integrated software solutions involving LLMs and ML models to enhance AI-assisted development workflows.
+	•	Developed and consumed RESTful APIs within an MVC architecture, ensuring robust data integration and service interaction.
+	•	Utilized AWS (VPC, DynamoDB, IAM, SQS, ECS, S3), Terraform, and Docker to build reliable, cloud-native services.
+	•	Implemented a CI/CD pipeline using Jenkins, Docker, Bitbucket, and Spinnaker to enhance developer experience and streamline deployments. 
+	•	Constructed observability dashboards with Datadog, Splunk, and Dynatrace to monitor system health and performance.
+	•	Enhanced automated testing and quality assurance by improving code coverage from 17% to 97% with JUnit and Mockito.
+	•	Leveraged frontend technologies including React, JavaScript, CSS, and HTML to complement backend service integration when necessary. 
+	•	Integrated Kafka for real-time data streaming, enabling event-driven architecture that improved system scalability and responsiveness.
+	•	Applied OAuth 2.0, OIDC, SAML, and JWT for secure API authentication and authorization.
+	•	Implemented Spring Security to reinforce robust access control for services and APIs.
+	•	Utilized Windsurf to develop efficient, high-quality code and maintain coding standards.
+California State University Mar 2020 - Aug 2021
+Research Assistant Long Beach, CA
+	•	Collaborated with a professor to analyze Caltrans data, focusing on Intelligent Transport Systems using NumPy, Pandas, and TensorFlow to support data-driven insights. 
+	•	Developed a mobile app employing OpenCV and NLP to address complex geometric problems.
+	•	Authored research papers for the Mineta Transportation Institute, contributing to academic advancements and interdisciplinary studies.
+Oracle Jul 2018 - Jan 2020
+Member of Technical staff Bangalore
+	•	Automated OCI scripts using Ansible, Go, and Python for storage domain testing.
+	•	Expertise in Terraform, Ansible, Docker, and containerization.
+	•	Hands-on experience with Unix/Linux, Windows systems, and distributed computing
+	•	I worked on storage, computing and networking modules in OCI, debugging projects.
+	•	Converted Python 2.x to 3.x and deployed projects to OCI using Bitbucket.
+	•	Resolved data processing, storage, and retrieval issues in OCI using automation.
+Cognizant Technology Solutions Aug 2014 - Jul 2018
+Programmer Analyst Bangalore
+	•	Automated 500+ test cases using Python and shell scripting, establishing a regression suite for daily product health reporting and automated testing on Linux/Unix. 
+	•	Reduced CI run time from 4.5 to 2.5 hours, saving 500 hours annually.
+	•	Proficient in Linux, Windows, and UNIX command-line operations.
+
+	•	Configured databases and backend applications to enhance functionality.
+	•	Collaborated with teams to integrate end-user feedback into improved solutions.
+	•	Documented project progress and resolved ongoing issues effectively.
+
+EDUCATION
+California State University - Long Beach
+Aug 2021
+M.S., Computer Science
+West Bengal University of Technology - Kolkata
+May 2014
+B.S., Information Technology
+HONORS & AWARDS
+	•	Won Global Recognition award 2024
+	•	Won #FutureOfMeterReading Contest, Capgemini Super Techies
+	•	Earned Global Project of the Year Award, Cognizant, 2
+	•	Represented school in district-level basketball

@@ -61,3 +61,14 @@ ehthumbs.db
 Thumbs.db
 .vscode/
 .idea/
+
+# Keep final resumes
+!Resume_Final/
+!Resume_Final/**
+
+# Keep petition letter
+!petition_letter.tex
+!petition_letter.pdf
+
+# Explicitly ignore compressed PDF
+main_compressed.pdf

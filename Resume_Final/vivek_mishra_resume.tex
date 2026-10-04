@@ -1,0 +1,262 @@
+%=================================================================
+%  VIVEK KUMAR MISHRA — Professional Profile
+%  Style: Distinguished Profile / Prestige CV (1.5 pages)
+%  Packages: TeX Live 2025 basic compatible
+%=================================================================
+\documentclass[10pt, letterpaper]{article}
+
+\usepackage[margin=0.6in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{calc}
+
+%--- Colors ---
+\definecolor{navy}{RGB}{13, 48, 110}
+\definecolor{royalblue}{RGB}{28, 96, 196}
+\definecolor{panelbg}{RGB}{232, 240, 255}
+\definecolor{rulegray}{RGB}{140, 170, 220}
+\definecolor{graytext}{RGB}{85, 85, 105}
+\definecolor{bodytext}{RGB}{20, 20, 28}
+\definecolor{lightblue}{RGB}{215, 230, 252}
+
+\hypersetup{colorlinks=true, urlcolor=royalblue, linkcolor=royalblue,
+  pdftitle={Vivek Kumar Mishra - Professional Profile}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+%--- Compact section rule ---
+\newcommand{\sect}[1]{%
+  \vspace{7pt}%
+  {\small\bfseries\color{navy}\MakeUppercase{#1}}%
+  \vspace{1pt}%
+  {\color{rulegray}\hrule height 0.9pt}%
+  \vspace{4pt}%
+}
+
+%--- Inline badge ---
+\newcommand{\bdg}[1]{%
+  \colorbox{lightblue}{\textcolor{navy}{\scriptsize\bfseries\,#1\,}}%
+}
+
+%--- Page style ---
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[R]{\scriptsize\color{graytext}
+  Vivek Kumar Mishra \,|\, Fellow BCS (FBCS) \,|\,
+  IEEE Senior Member \,|\, Senior Software Engineer, Vanguard}
+\fancyfoot[C]{\scriptsize\color{graytext}\thepage}
+
+%=================================================================
+\begin{document}
+\thispagestyle{empty}
+
+%--- HEADER ---
+\begin{center}
+  {\fontsize{22pt}{26pt}\selectfont\bfseries\color{navy} VIVEK KUMAR MISHRA}\\[3pt]
+  {\normalsize\color{graytext}
+    Fellow, British Computer Society (FBCS) \quad\textbar\quad
+    IEEE Senior Member \quad\textbar\quad
+    Sr. Software Engineer, The Vanguard Group
+  }\\[5pt]
+  {\small\color{graytext}
+    \href{mailto:vivekmishraima@gmail.com}{vivekmishraima@gmail.com}
+    \;\textbar\;
+    \href{tel:+15622864529}{+1 (562) 286-4529}
+    \;\textbar\;
+    \href{https://www.linkedin.com/in/vivek-mishra-5a93b568/}{linkedin.com}
+    \;\textbar\;
+    \href{https://vivekmishra02.github.io/}{vivekmishra02.github.io}
+  }
+\end{center}
+
+\vspace{3pt}
+
+%--- FEDERAL RECOGNITION STRIP ---
+\noindent\fcolorbox{royalblue}{panelbg}{%
+  \parbox{\linewidth - 2\fboxsep - 2\fboxrule}{%
+    \vspace{2pt}
+    \small
+    \textbf{\color{navy}Federal Recognition:}\;
+    \textcolor{bodytext}{Research permanently archived in the
+    \textbf{U.S. National Transportation Library} (ROSA P dot/61210 \& dot/59030).
+    Methodologies adopted by the \textbf{Florida Department of Transportation}.
+    Recognized petitioner for \textbf{EB-2 National Interest Waiver (NIW)} and
+    \textbf{EB-1A Extraordinary Ability}---formal U.S. government acknowledgment of
+    contributions to critical national infrastructure and the AI ecosystem.
+    Aligns with \textbf{Executive Order 14110} on Safe, Secure, and Trustworthy AI.}
+    \vspace{2pt}
+  }%
+}
+
+%=================================================================
+\sect{Professional Profile}
+
+{\small\color{bodytext}
+Vivek Kumar Mishra is a Senior Software Engineer at \textbf{The Vanguard Group} (Aug 2026--present),
+one of the world's largest investment management firms with \$9+ trillion AUM. A distinguished
+scholar-practitioner with \textbf{12+ years} of contributions spanning enterprise technology, U.S.
+federally funded research, and international academic scholarship, he holds the title of
+\textbf{Fellow of the British Computer Society (FBCS)}---the most prestigious grade conferred
+by the UK's Chartered Institute for IT---and is an \textbf{IEEE Senior Member}, held by fewer
+than 8\% of IEEE's 460,000+ global members. Prior to Vanguard, he served as Founding Engineer
+at \textbf{JPMorgan Chase \& Co.} (Oct 2024--May 2026) on systems serving 80+ million Americans,
+delivering \$100K+ in savings and a 43\% performance improvement. He is also the recipient of the
+\textbf{2024 Global Recognition Award} from an independent awarding body. His federally funded research at \textbf{California State
+University, Long Beach} has been permanently archived by the U.S. Department of Transportation
+and adopted by the Florida DOT. He is the author of 9 peer-reviewed publications (48+ citations,
+h-index 4) and the textbook \textit{Design Patterns for AI Agents} (ISBN: 979-8268912371),
+adopted into AI curricula at three independent AICTE-regulated engineering institutions.
+He serves as peer reviewer for \textbf{NeurIPS}, \textbf{ICLR}, and \textbf{ICML} (all CORE
+A*) and has been featured in publications reaching tens of millions of readers globally.
+}
+
+%=================================================================
+\sect{Distinctions \& Professional Recognition}
+
+\vspace{1pt}
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth}X@{}}
+
+  \textbf{\small\color{navy}Fellow, BCS (FBCS)} &
+  {\small Elected Fellow of the British Computer Society---The Chartered Institute for IT.
+  Highest grade of membership; awarded for outstanding contribution to IT and exceptional
+  professional leadership. \textit{(2025)}}\\[4pt]
+
+  \textbf{\small\color{navy}IEEE Senior Member} &
+  {\small Top 8\% of 460,000+ global IEEE members. Requires 10+ years practice and 5 years
+  of significant performance, evaluated by independent Senior Members/Fellows. \textit{(2025)}}\\[4pt]
+
+  \textbf{\small\color{navy}Global Recognition Award} &
+  {\small Recipient of the \textbf{2024 Global Recognition Award}, presented by an independent global awarding body in recognition of outstanding professional achievements and contributions. \textit{(2024)}}\\[4pt]
+
+  \textbf{\small\color{navy}Innovation Awards} &
+  {\small Winner, \#FutureOfMeterReading Contest --- Capgemini Super Techies (global
+  competition). Global Project of the Year Award --- Cognizant Technology Solutions
+  (Fortune 200).}\\
+
+\end{tabularx}
+
+%=================================================================
+\sect{Career}
+
+\vspace{1pt}
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth}X@{}}
+
+  \textbf{\small\color{navy}The Vanguard Group} \newline
+  {\scriptsize\color{graytext}Sr. Software Engineer, Aug 2026 -- Present \,|\, Malvern, PA} &
+  {\small Architecting scalable, high-availability backend systems and AI-integrated
+  data pipelines for one of the world's largest investment managers (\$9+ trillion AUM),
+  serving millions of retail and institutional investors globally.}\\[5pt]
+
+  \textbf{\small\color{navy}JPMorgan Chase \& Co.} \newline
+  {\scriptsize\color{graytext}Sr. Software Engineer \newline Oct 2024 -- May 2026 \,|\, Wilmington, DE} &
+  {\small Founding Engineer, Chase Shopping Hub --- platform serving \textbf{80+ million
+  cardmembers}, processing 5M+ monthly API requests at 99.9\% uptime. Delivered
+  \textbf{\$100K+ in cost savings} and \textbf{43\% response-time improvement}.
+  Integrated LLM/ML pipelines into enterprise workflows.}\\[5pt]
+
+  \textbf{\small\color{navy}CSULB --- Research Asst.} \newline
+  {\scriptsize\color{graytext}2020--2021 \,|\, Long Beach, CA} &
+  {\small Hand-selected for U.S. DOT \& Caltrans-funded Intelligent Transportation Systems
+  research. Developed AI/Python frameworks adopted by Florida DOT across state lines.
+  Authored 7 publications, permanently archived in the U.S. National Transportation
+  Library (ROSA P). Contributes to federal Justice40 Initiative objectives.}\\[5pt]
+
+  \textbf{\small\color{navy}Oracle} \newline
+  {\scriptsize\color{graytext}Member of Technical Staff \newline 2018--2020 \,|\, India} &
+  {\small Oracle Cloud Infrastructure (OCI) --- storage, compute, and networking modules.
+  Salary 83\% above market average. Infrastructure automation via Ansible, Go, and Python.}\\[5pt]
+
+  \textbf{\small\color{navy}Cognizant Tech. Solutions} \newline
+  {\scriptsize\color{graytext}Programmer Analyst \newline 2014--2018 \,|\, India} &
+  {\small Automated 500+ test cases; reduced CI runtime from 4.5 to 2.5 hours, saving
+  500+ engineering hours annually. Fortune 200 Global Project of the Year Award.}\\
+
+\end{tabularx}
+
+%=================================================================
+\sect{Scholarship \& Academic Contributions}
+
+\vspace{1pt}
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth}X@{}}
+
+  \textbf{\small\color{navy}Publications} &
+  {\small \textbf{9 peer-reviewed articles} \,|\, \textbf{48+ citations} \,|\,
+  \textbf{h-index 4}.
+  Cited by researchers in the U.S., Italy, China, and Iran. Selected works:
+  \textit{``Framework for Rail Transport Inequality Assessment\ldots''} (15 citations);
+  \textit{``Evaluating Financing Mechanisms \ldots Grade Separation Projects''} (12 citations);
+  \textit{``AI-Driven Optimization of Backend \& Cloud Infrastructure\ldots''} (IJARSCT,
+  IF 8.2); \textit{``Integrating Solar PV into the Grid: AI Application''} (MDPI
+  Sustainability, IF 3.9). Two works permanently archived in the \textbf{U.S. National
+  Transportation Library} (ROSA P).}\\[5pt]
+
+  \textbf{\small\color{navy}Authored Book} &
+  {\small \textit{Design Patterns for AI Agents: A Structured Approach to Building Robust
+  and Intelligent Systems} (ISBN: 979-8268912371). Adopted into the B.Tech CSE AI
+  curriculum at Anand International College of Engineering and Supaul College of
+  Engineering; library collection at LNCTS Bhopal (all AICTE-regulated institutions).}\\[5pt]
+
+  \textbf{\small\color{navy}Peer Review} &
+  {\small Reviewer: \textbf{NeurIPS 2025} (CORE A*, Position Paper Track, 3 papers);
+  \textbf{ICLR 2025} (CORE A*, FM-Wild Workshop); \textbf{ICML 2026} (CORE A*, AIWILD
+  Workshop); GSP 2025, ACDSA 2026, ICECET 2026. Academic journals: \textit{Virtus
+  InterPress} (Risk Governance; Business Strategy Review); \textit{Informatica}.}\\[5pt]
+
+  \textbf{\small\color{navy}Expert Judging} &
+  {\small \textbf{IEEE Senior Member Application Review Panel} (June 2025)---evaluated
+  engineering qualifications of professionals globally. Certified hackathon judge:
+  \textbf{PennApps} (Univ.\ of Pennsylvania), DragonHacks 2024, Claro 2024.}\\
+
+\end{tabularx}
+
+%=================================================================
+\sect{Media Coverage \& Public Recognition}
+
+{\small\color{bodytext}
+Featured in \textbf{TechBullion} (230K/mo, exclusive interview);
+profiled in \textbf{VoyageLA} (\textit{``Rising Stars: Meet Vivek Mishra''});
+quoted as IEEE expert in \textbf{TechTarget} (1.4M+ daily), \textbf{Dice.com} (2.4M/mo),
+and \textbf{VKTR.com} (7M+ readers).
+Recognized by \textbf{IEEE} as an \textit{``IEEE Impact Creator''} on IEEE Transmitter and IEEE.tv;
+featured via IEEE's official X/Twitter.
+Profiled in \textbf{Dainik Bhaskar} (India's \#1 Hindi newspaper, 63M readers) and
+\textbf{Rajasthan Patrika} (25M readers).
+}
+
+%=================================================================
+\sect{Education \& Certifications}
+
+\begin{tabularx}{\linewidth}{@{}p{0.28\linewidth}X@{}}
+  \textbf{\small\color{navy}M.S., Computer Science} \newline
+  {\scriptsize\color{graytext}CSULB, 2021} &
+  {\small California State University, Long Beach (R2 Doctoral University).
+  Focus: Applied AI/ML \& Intelligent Transportation Systems.}\\[4pt]
+
+  \textbf{\small\color{navy}B.Tech, Info. Technology} \newline
+  {\scriptsize\color{graytext}WBUT, 2014} &
+  {\small West Bengal University of Technology, Kolkata, India.}\\[4pt]
+
+  \textbf{\small\color{navy}Certifications} &
+  {\small AWS Certified Cloud Practitioner \,|\, IEEE Senior Member \,|\, Fellow of BCS (FBCS)}\\
+\end{tabularx}
+
+\vspace{6pt}
+\noindent{\color{rulegray}\hrule height 0.8pt}
+\vspace{3pt}
+\begin{center}
+\scriptsize\color{graytext}
+Full publication list, media documentation, IEEE elevation letter, federal archival records, and letters of endorsement from 7 distinguished professionals available on \href{https://vivekmishra02.github.io/}{https://vivekmishra02.github.io/}.
+\end{center}
+
+\end{document}
